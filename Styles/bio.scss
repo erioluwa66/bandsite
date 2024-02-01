@@ -1,0 +1,6 @@
+@use "./variables/mixins" as *;
+@use "./partials/mixins" as *;
+
+main {
+    background-color: blue;
+}
