@@ -1,3 +1,55 @@
-main {
-  background-color: blue;
+@font-face {
+  font-family: "Avenir";
+  src: url("./../../Assets/Font/AvenirNextLTPro-Regular.otf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("./../../Assets/Font/AvenirNextLTPro-Demi.otf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("./../../Assets/Font/AvenirNextLTPro-Bold.otf") format("truetype");
+  font-weight: 700;
+}
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Avenir", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+    font-weight: 700;
+  }
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }/*# sourceMappingURL=bio.css.map */

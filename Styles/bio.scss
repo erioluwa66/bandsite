@@ -1,6 +1,13 @@
-@use "./variables/mixins" as *;
+@use "./partials/variables" as *;
 @use "./partials/mixins" as *;
+@use "./partials/global" as *;
 
-main {
-    background-color: blue;
+.gallery{
+    display: flex;
+    flex-direction: column;
+    @include tablet{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
