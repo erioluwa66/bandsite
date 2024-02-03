@@ -1,12 +1,8 @@
 @use "./variables" as * ;
 @use "./mixins" as * ;
-@use "./color" as * ;
+@use "./navigation" as * ;
 
-@function color($color-pri)
-    @return map-get($primary-colors, $color-type);
 
-@function color($color-sec) 
-    @return map-get($secondary-colors, $color-type);
 
 
  html{
@@ -85,71 +81,33 @@ a {
     line-height: 1.25rem;
     font-weight: 700;
     text-decoration: none;
-    color: map-get($secondary-colors, Mercury);
+    color: get-secondary-color(Mercury);
     transition: color 0.3s;
     @include tablet {
         font-size: .75rem;
         line-height: 1.25rem;
         font-weight: 700;
         text-decoration: none;
-        color: map-get($secondary-colors, Mercury);
+        color: get-secondary-color(Mercury);
         transition: color 0.3s;
     }
     &:hover,
     &:active{
-        color: map-get($primary-colors, White);
+        color: get-primary-color(White);
         text-decoration: underline;
     }
 
     &.active{
-        color: map-get($primary-colors, White);
+        color: get-primary-color(White);
         text-decoration: underline;
     }
 }
 
 header {
-    background-color: map-get($primary-colors, BandSite-Black);
+    background-color: get-primary-color(BandSite-Black);
     position: fixed;
     width: 100vw;
     z-index: 1000;
  }
-/*
- nav {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 10px 20px;
-}
 
-.logo a {
-    color: #335576;
-    text-decoration: none;
-    font-size: 1.5rem;
-    margin-left: 1rem;
-}
 
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #335576;
-    position: relative;
-}
-
-nav a:hover::after,
-nav a.active::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    height: 2px;
-    width: 100%;
-    background-color:map-get($primary-colors, White);
-}

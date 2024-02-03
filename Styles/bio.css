@@ -13,6 +13,33 @@
   src: url("./../../Assets/Font/AvenirNextLTPro-Bold.otf") format("truetype");
   font-weight: 700;
 }
+.main-nav {
+  height: 5rem;
+  width: 100%;
+  background-color: #323232;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-nav__logo {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.main-nav__logo-image {
+  width: 7.5rem;
+  margin-bottom: 0.5rem;
+}
+.main-nav__list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -98,60 +125,32 @@ a {
   font-size: 0.0063rem;
   line-height: 1.25rem;
   font-weight: 700;
+  text-decoration: none;
+  color: #E1E1E1;
+  transition: color 0.3s;
 }
 @media (min-width: 768px) {
   a {
     font-size: 0.75rem;
     line-height: 1.25rem;
     font-weight: 700;
+    text-decoration: none;
+    color: #E1E1E1;
+    transition: color 0.3s;
   }
+}
+a:hover, a:active {
+  text-decoration: underline;
+}
+a.active {
+  text-decoration: underline;
 }
 
 header {
   background-color: #323232;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 1000;
-}
-
-nav {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 10px 20px;
-}
-
-.logo a {
-  color: #335576;
-  text-decoration: none;
-  font-size: 1.5rem;
-  margin-left: 1rem;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-nav ul li {
-  margin-right: 20px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #335576;
-  position: relative;
-}
-
-nav a:hover::after,
-nav a.active::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  height: 2px;
-  width: 100%;
-  background-color: #FFFFFF;
 }
 
 .gallery {

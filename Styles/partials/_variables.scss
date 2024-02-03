@@ -1,6 +1,16 @@
-@use "./typography";
+@use "./typography" as * ;
+@use "./color" as * ;
+
 
 $tablet-breakpoint: 768px;
 $desktop-breakpoint: 1280px;
 $mobile-breakpoint: 320px;
 $font-family: "Avenir", Arial, Helvetica, sans-serif;
+$primary-text: #323232;
+$secondary-text: #AFAFAF;
+$primary-text-light: #FFFFFF;
+$hover-state: #000000;
+$divider-line: #E1E1E1;
+$alternative-text: #FAFAFA;
+
+
