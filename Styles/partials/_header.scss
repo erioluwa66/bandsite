@@ -2,22 +2,21 @@
 @use "./typography" as *;
 @use "./mixins" as *;
 
+//mobile styling starts
+
 .header {
     height: 80px;
     width: 100vw;
     background-color: $primary-text;
-
-    &__logo-container {
+    &__navbar-box {
         display: flex;
         justify-content: center;
     }
-
-    &__logo {
+    &__navbar-logo {
         width: 6.25rem;
-        padding: 16px 0px;
-    }
-
-    &__menu {
+        padding: 1rem 0px;
+        }
+    &__nav-list {
         list-style-type: none;
         display: flex;
         justify-content: space-around;
@@ -28,50 +27,45 @@
         margin: 0;
         width: 100%;
     }
-
-    &__border-one:hover {
+    &__frame-one:hover {
         color: $primary-text-light;
-        border-bottom: 5px solid $primary-text-light;
+        border-bottom: .3125rem solid $primary-text-light;
+    }
+    &__frame-two:hover {
+        color: $primary-text-light;
+        border-bottom: .3125rem solid $primary-text-light;
     }
 
-    &__border-two:hover {
-        color: $primary-text-light;
-        border-bottom: 5px solid $primary-text-light;
-    }
-
-    &__menu-item--one,
-    &__menu-item--two {
+    &__list-item--one,
+    &__list-item--two {
         text-align: center;
-        padding-bottom: 3px;
+        padding-bottom: .1875rem;
         font-size: 1rem;
         width: 50vw;
     }
 }
 
-/* mobile-styling-end */
+// mobile styling end 
 
-/* tablet-styling-start */
+// tablet styling start
 @include tablet {
     .header {
         height: 80px;
         width: 100vw;
         background-color: $primary-text;
-
-        &__medium {
+        &__navbar {
             display: flex;
             width: 50vw;
             align-items: center;
             height: 100%;
         }
-
-        &__logo {
+        &__navbar-box {
             width: 6.25rem;
             margin: 0 1.5rem;
             padding: 0;
         }
-
-        &__border-one,
-        &__border-two {
+        &__frame-one,
+        &__frame-two {
             border-bottom: none;
             display: flex;
             flex-direction: column;
@@ -80,19 +74,16 @@
             border-bottom: 4px solid transparent;
             margin: 0 1.75rem;
         }
-
         &__border-bottom:hover {
             border-bottom: 4px solid $primary-text-light;
         }
-
-        &__menu {
+        &__nav-list {
             display: flex;
             justify-content: space-around;
             width: auto;
         }
-
-        &__menu-item--one,
-        &__menu-item--two {
+        &__nav-list--one,
+        &__nav-list--two {
             font-size: 6.25rem;
             width: 5rem;
             padding: 0;
@@ -101,31 +92,27 @@
     }
 }
 
-/* tablet-styling-end */
+// tablet styling end 
 
-/* desktop-styling-start */
+// desktop styling start 
 @include desktop {
     .header {
         height: 80px;
         width: 100vw;
         background-color: $primary-text;
-
-        &__medium {
+        &__navbar {
             display: flex;
             width: 50vw;
             align-items: center;
             height: 100%;
         }
-
-        &__logo {
+        &__navbar-box {
             width: 6.25rem;
             margin: 0 1.75rem 0 11.25rem;
             padding: 0;
-            // padding: 0 1.5rem 0 1.5rem;
         }
-
-        &__border-one,
-        &__border-two {
+        &__frame-one,
+        &__frame-two {
             border-bottom: none;
             display: flex;
             flex-direction: column;
@@ -139,17 +126,18 @@
             border-bottom: 4px solid $primary-text-light;
         }
 
-        &__menu {
+        &__nav-list {
             display: flex;
             justify-content: space-around;
             width: auto;
         }
 
-        &__menu-item--one,
-        &__menu-item--two {
+        &__nav-list--one,
+        &__nav-list--two {
             width: 5rem;
             padding: 0;
             font-size: 1rem;
         }
     }
 }
+// desktop styling end

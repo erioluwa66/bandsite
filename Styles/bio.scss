@@ -6,22 +6,65 @@
 @use "./partials/hero" as * ;
 @use "./partials/footer" as *;
 
-.gallery{
+.photo {
     background-color: $alternative-text;
     padding: 0 1rem;
-    display: flex;
-    flex-direction: column;
-    @include tablet{
+    &__header {
+        font-family: "Avenir";
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding: 2rem 0 1rem 0;
+    }
+    &__pics {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        flex-direction: row;
+        flex-direction: column;
+        padding-bottom: 1.5rem;
+        &-item {
+            height: 50.625vw;
+            width: 100%;
+            padding: 0.5rem 0;
+            filter: grayscale(1);
+        }
+        &-item:hover {
+            filter: none;
+        }
     }
 }
 
-.gallery img {
-    @include tablet{
-        width: calc(33% - 10px);
-        margin-bottom: 10px;
+@include tablet {
+    .photo {
+        padding: 0 1.5rem;
+        &__header {
+            font-size: 2.25rem;
+            line-height: 2.75rem;
+            padding-bottom: 2rem;
+        }
+        &__pics {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            &-item {
+                height: 16.40625vw;
+                width: calc(33% - 10px);
+                padding: 0 0 1.5rem 0;
+            }
+        }
+    }
+}
+
+@include desktop {
+    .photo {
+        padding: 0 11.25rem;
+        &__header {
+            padding: 3rem 0 4rem 0;
+        }
+       &__pics {
+            padding-bottom: 1rem;
+            &-item {
+                height: 11.7363vw;
+            }
+        }
     }
 }
