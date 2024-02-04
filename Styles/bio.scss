@@ -4,8 +4,11 @@
 @use "./partials/typography" as * ;
 @use "./partials/header" as * ;
 @use "./partials/hero" as * ;
+@use "./partials/footer" as *;
 
 .gallery{
+    background-color: $alternative-text;
+    padding: 0 1rem;
     display: flex;
     flex-direction: column;
     @include tablet{

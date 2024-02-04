@@ -243,7 +243,7 @@
   padding-bottom: 2rem;
   width: 85%;
 }
-.about__introduction--quote-person {
+.about__introduction--quote--author {
   padding-bottom: 2.5rem;
   font-family: "Avenir";
   font-weight: 600;
@@ -263,6 +263,161 @@
   padding-top: 1.5rem;
 }
 
+@media (min-width: 768px) {
+  .about {
+    padding: 0rem 1.5rem 1.5rem 1.5rem;
+  }
+  .about__introduction--title {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+  .about__introduction--image {
+    height: 47.136vw;
+  }
+  .about__introduction--quote {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: unset;
+  }
+  .about__introduction--quote--author {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .about__main--tittle {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .about__main--story-box {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .about__main--story {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+  #main-bot {
+    padding-left: 1.5em;
+  }
+}
+@media (min-width: 1280px) {
+  .about {
+    padding: 0 17rem 3rem 17rem;
+  }
+  .about__introduction--title {
+    margin: 3rem 0 0 -5.75rem;
+  }
+  .about__introduction--image {
+    margin: 3rem 0;
+    height: 31.25vw;
+  }
+  .about__introduction--quote {
+    padding-bottom: 2.5rem;
+  }
+  .about__introduction--quote--author {
+    padding-bottom: 3.5rem;
+  }
+  .about__main--story-box {
+    width: 55rem;
+  }
+  .about__main--story {
+    width: 26.25rem;
+    padding-top: 2rem;
+  }
+  #main-bot {
+    padding-left: 2.5rem;
+  }
+}
+.footer {
+  background-color: #323232;
+  color: #FFFFFF;
+  padding: 0 1rem;
+  font-family: "Avenir";
+  font-weight: 400;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+}
+.footer__title {
+  font-family: "Avenir";
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 2rem 0 1.5rem 0;
+}
+.footer__icon {
+  padding-bottom: 2rem;
+}
+.footer__icon-link {
+  margin-right: 1.6rem;
+}
+.footer__logo {
+  display: none;
+}
+.footer__contact--details__name {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  padding-bottom: 1.25rem;
+}
+.footer__contact--details__address, .footer__contact--details__email {
+  color: #AFAFAF;
+  text-decoration: none;
+  margin-bottom: 1.25rem;
+}
+.footer__copyright {
+  color: #AFAFAF;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 0 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .footer__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__tittle {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    padding: 3rem 0 3.5rem 0;
+  }
+  .footer__icon {
+    padding: 0 8rem 0 0;
+  }
+  .footer__icon-link {
+    margin-right: 2rem;
+  }
+  .footer__logo {
+    display: inherit;
+    height: 1.5rem;
+    width: 7.5rem;
+  }
+  .footer__contact-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__contact--details__name {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .footer__contact--details__address {
+    padding-bottom: 0.25rem;
+  }
+  .footer__contact--details__email {
+    margin-bottom: 2.5rem;
+  }
+}
+@media (min-width: 1280px) {
+  .footer {
+    padding: 0 11.25rem;
+  }
+  .footer__icon {
+    padding-right: 30rem;
+  }
+}
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -345,6 +500,8 @@ footer {
 }
 
 .gallery {
+  background-color: #FAFAFA;
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
 }
