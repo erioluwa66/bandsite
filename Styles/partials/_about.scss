@@ -2,64 +2,56 @@
 @use "./typography" as *;
 @use "./mixins" as *;
 
+// mobile styling starts
 .about {
-    padding: 0rem 1rem 2.5rem 1rem;
-    color: $primary-text;
-    background-color: $primary-text-light;
+    margin: 1.5rem 1rem 1rem 1rem;
     &__introduction {
-        display: flex;
-        flex-direction: column;
-        align-items: left;
         &--title {
             font-family: "Avenir";
             font-weight: 700;
             font-size: 1.5rem;
-            padding-top: 2rem;
+            padding: 1.5rem 1rem 1rem 1rem;
             line-height: 2rem;
         }
         &--image {
-            height: 45.313vw;
+            height: 47.1vw;
             width: 100%;
-            margin: 1.5rem 0;
+            margin: 0 0 1.5rem 0;
             object-fit: cover;
         }
         &--quote {
             font-family: "Avenir";
             font-weight: "700";
-            font-size: 0.875rem;
-            line-height: 1.375rem;
-            padding-bottom: 2rem;
-            width: 85%;
-         &--author {
-            padding-bottom: 2.5rem;
-            font-family: "Avenir";
-            font-weight: 600;
-            font-size: 0.875rem;
-            line-height: 1.375rem;
-            }
+            font-size: 1.5rem;
+            line-height: 2rem;
+            margin: 0 0 2rem 0;
+            width: 90%;
         }
     }
-
     &__main--title {
         font-family: "Avenir";
-        font-weight: 700;
-        font-size: 0.875rem;
+        font-weight: 600;
+        font-size: .875rem;
         line-height: 1.375rem;
+        margin: 0 0 1.5rem 0
     }
     &__main--story {
         font-family: "Avenir";
-        font-weight: 700;
+        font-weight: 400;
         line-height: 1.125rem;
-        padding-top: 1.5rem;
+        font-size: .8125rem;
     }
 }
+//mobile styling stops
 
+// tablet styling starts
 @include tablet {
     .about {
-        padding: 0rem 1.5rem 1.5rem 1.5rem;
         &__introduction {
             &--title {
                 font-size: 2.25rem;
+                font-family: "Avenir";
+                font-weight: 700;
                 line-height: 2.75rem;
             }
             &--image {
@@ -69,19 +61,19 @@
                 font-size: 1.5rem;
                 line-height: 2rem;
                 width: unset;
-            &--author {
-                 font-size: 1rem;
-                line-height: 1.5rem;
-                }
             }
         }
         &__main--tittle {
-            font-size: 1.5rem;
-            line-height: 2rem;
+            font-family: "Avenir";
+            font-weight: 700;
+            font-size: 1.3rem;
+            line-height: 1.5;
+            margin: 2px 1px 1px 1px;
+            padding: 2rem;
+            }
         }
         &__main--story-box {
             display: flex;
-            justify-content: space-evenly;
         }
         &__main--story {
             font-size: 0.875rem;
@@ -91,7 +83,9 @@
     #main-bot {
         padding-left: 1.5em;
     }
-}
+// tablet styling stops
+
+// desktop styling starts
 
 @include desktop {
     .about {
@@ -124,3 +118,5 @@
         padding-left: 2.5rem;
     }
 }
+
+// desktop styling stops
