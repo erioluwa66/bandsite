@@ -11,11 +11,11 @@
     &__navbar-box {
         display: flex;
         justify-content: center;
+        &-logo {
+          width: 6.25rem;
+          padding: 1rem 0rem;
+         }
     }
-    &__navbar-logo {
-        width: 6.25rem;
-        padding: 1rem 0px;
-        }
     &__nav-list {
         list-style-type: none;
         display: flex;
@@ -25,23 +25,14 @@
         font-weight: 600;
         padding: 0;
         margin: 0;
-        width: 100%;
-    }
-    &__frame-one:hover {
-        color: $primary-text-light;
-        border-bottom: .3125rem solid $primary-text-light;
-    }
-    &__frame-two:hover {
-        color: $primary-text-light;
-        border-bottom: .3125rem solid $primary-text-light;
-    }
-
-    &__list-item--one,
-    &__list-item--two {
+        width: 100%;   
+        &--one,
+        &--two {
         text-align: center;
-        padding-bottom: .1875rem;
+        padding-bottom: .170rem;
         font-size: 1rem;
         width: 50vw;
+        }
     }
 }
 
@@ -58,36 +49,32 @@
             width: 50vw;
             align-items: center;
             height: 100%;
-        }
-        &__navbar-box {
+            &-box {
             width: 6.25rem;
             margin: 0 1.5rem;
             padding: 0;
-        }
+          } 
+        }   
         &__frame-one,
         &__frame-two {
             border-bottom: none;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            height: 80px;
-            border-bottom: 4px solid transparent;
+            height: 5rem;
             margin: 0 1.75rem;
-        }
-        &__border-bottom:hover {
-            border-bottom: 4px solid $primary-text-light;
-        }
+        }       
         &__nav-list {
             display: flex;
             justify-content: space-around;
-            width: auto;
-        }
-        &__nav-list--one,
-        &__nav-list--two {
+            width: auto;        
+            &--one,
+            &--two {
             font-size: 6.25rem;
             width: 5rem;
             padding: 0;
             font-size: 1rem;
+            }
         }
     }
 }
@@ -97,47 +84,40 @@
 // desktop styling start 
 @include desktop {
     .header {
-        height: 80px;
+        height: 5em;
         width: 100vw;
         background-color: $primary-text;
         &__navbar {
             display: flex;
             width: 50vw;
             align-items: center;
-            height: 100%;
-        }
-        &__navbar-box {
+            height: 100%;    
+            &-box {
             width: 6.25rem;
             margin: 0 1.75rem 0 11.25rem;
             padding: 0;
         }
+    }
         &__frame-one,
         &__frame-two {
             border-bottom: none;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            height: 80px;
-            border-bottom: 4px solid transparent;
+            height: 5rem;
             margin: 0 1.75rem;
-        }
-
-        &__border-bottom:hover {
-            border-bottom: 4px solid $primary-text-light;
-        }
-
+        }     
         &__nav-list {
             display: flex;
             justify-content: space-around;
-            width: auto;
-        }
-
-        &__nav-list--one,
-        &__nav-list--two {
+            width: auto;      
+            &--one,
+            &--two {
             width: 5rem;
             padding: 0;
             font-size: 1rem;
-        }
-    }
+         }
+     }
+  }
 }
 // desktop styling end
