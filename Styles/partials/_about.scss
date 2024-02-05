@@ -4,83 +4,113 @@
 
 // mobile styling starts
 .about {
-    margin: 1.5rem 1rem 1rem 1rem;
-    &__introduction {
-        &--title {
-            font-family: "Avenir";
-            font-weight: 700;
-            font-size: 1.5rem;
-            padding: 1.5rem 1rem 1rem 1rem;
-            line-height: 2rem;
+    margin: 0 1rem;
+    &__title {
+        font-family: "Avenir";
+        font-weight: 700;
+        font-size: 1.5rem;
+         padding: 1.5rem 1rem 1rem 1rem;
+        line-height: 2rem;
         }
-        &--image {
-            height: 47.1vw;
-            width: 100%;
+    &__image-container {
+            height: 45.2vw;
             margin: 0 0 1.5rem 0;
-            object-fit: cover;
         }
-        &--quote {
-            font-family: "Avenir";
-            font-weight: "700";
-            font-size: 1.5rem;
-            line-height: 2rem;
-            margin: 0 0 2rem 0;
-            width: 90%;
-        }
+    &__image{
+        height: 100%;
+        width: 100%;
     }
-    &__main--title {
+    &__quote {
+        font-family: "Avenir";
+        font-weight: "700";
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+        margin: 0 0 2rem 0;
+        }
+    &__quote-author{
+        font-family: "Avenir";
+        font-weight: 400;
+        margin: 0 0 2.5rem 0;
+    }
+    &__main {
         font-family: "Avenir";
         font-weight: 600;
         font-size: .875rem;
         line-height: 1.375rem;
         margin: 0 0 1.5rem 0
     }
-    &__main--story {
+    &__story-one {
         font-family: "Avenir";
         font-weight: 400;
         line-height: 1.125rem;
         font-size: .8125rem;
+        margin: 0 0 1.5rem 0;
     }
+    &__story-two {
+        font-family: "Avenir";
+        font-weight: 400;
+        line-height: 1.125rem;
+        font-size: .8125rem;
+        margin: 0 0 2.5rem 0;
+        }
 }
+
 //mobile styling stops
 
 // tablet styling starts
 @include tablet {
     .about {
-        &__introduction {
-            &--title {
+            margin: 0 1rem;   
+            &__title {
+                font-family: "Avenir";
+                color: $primary-text;
+                font-weight: 700;
                 font-size: 2.25rem;
+                padding: 1.5rem 1rem 1rem 1rem;
+            } 
+            &__image-container {
+                height: 46.8vw;
+                margin: 0 0 1.5rem 0;
+            }    
+            &__quote {
+                font-family: "Avenir";
+                font-weight: "700";
+                font-size: 1.5rem;
+                color: $primary-text;
+                line-height: 2.75rem;
+                margin: 0 0 2rem 0;
+            }  
+            &__quote-author {
+                font-family: "Avenir";
+                font-weight: 600;
+                margin: 0 0 2.5rem 0;
+            } 
+            &__main {
                 font-family: "Avenir";
                 font-weight: 700;
-                line-height: 2.75rem;
+                color:$primary-text;
+                margin: 0rem 0rem 1.5rem 0rem;
             }
-            &--image {
-                height: 47.136vw;
+            &__story-box{
+                display: flex;              
             }
-            &--quote {
-                font-size: 1.5rem;
-                line-height: 2rem;
-                width: unset;
+            &__story-one {
+                font-family: "Avenir";
+                font-weight: 400;
+                line-height: 1.375rem;
+                font-size: .875rem;
+                color: $primary-text;
+                margin: 0 1.5rem 2.5rem 0;
+            }
+            &__story-two {
+                font-family: "Avenir";
+                font-weight: 400;
+                line-height: 1.375rem;
+                font-size: .875rem;
+                color: $primary-text;
+                margin: 0 0 2.5rem 0;
             }
         }
-        &__main--tittle {
-            font-family: "Avenir";
-            font-weight: 600;
-            font-size: 1.8rem;
-            line-height: 1.375rem;
-            padding: 36px;
-            }      
-        &__main--story-box {
-            display: flex;   
-        }
-        &__main--story {
-            font-size: 0.875rem;
-            line-height: 1.375rem;
-        }
-    }
-    #about-align {
-        padding-left: 1.5em;
-    }
 }
 
 // tablet styling stops
@@ -88,30 +118,54 @@
 // desktop styling starts
 
 @include desktop {
-    .about {
-        &__introduction {
-            &--title {
-                margin: 3rem 0 0 -5.75rem;
-            }
-            &--image {
-                margin: 3rem 0;
-                height: 31.25vw
-            }
-            &--quote {
-                padding-bottom: 2.5rem;          
-            }
+.about {
+        margin: 0 1rem;
+
+        &__title {
+            font-family: "Avenir";
+            font-weight: 700;
+            font-size: 2.25rem;
+            padding: 3rem 0rem 3rem 10rem;
         }
-        &__main--story-box {
-            width: 55rem;
+        &__image-container {
+            height: 32.1vw;
+            margin: 0 17rem 3.5rem 17rem;
         }
-        &__main--story {
-            width: 26.25rem;
-            padding-top: 2rem;
+        &__quote {
+            font-family: "Avenir";
+            font-weight: "700";
+            font-size: 1.5rem;
+            line-height: 2.75rem;
+            margin: 0 0 2.5rem 17rem;
+            width: 60vw;
         }
-    }
-    #about-align {
-        padding-left: 2.5rem;
+        &__quote-author {
+            font-family: "Avenir";
+            font-weight: 700;
+            margin: 0 0 3.5rem 17rem;
+        }
+        &__main {
+            font-family: "Avenir";
+            font-weight: 700;
+            margin: 0 0 2.5rem 17rem;
+        }
+        &__story-box {
+            display: flex;
+            margin: 0rem 17rem 3rem 17rem;
+        }
+        &__story-one {
+            font-family: "Avenir";
+            font-weight: 400;
+            line-height: 1.375rem;
+            font-size: .875rem;
+            margin: 0rem  2.5rem 0rem 0rem;
+        }
+        &__story-two {
+            font-family: "Avenir";
+            font-weight: 400;
+            line-height: 1.375rem;
+            font-size: .875rem;
+            margin: 0rem;
+        }
     }
 }
-
-// desktop styling stops

@@ -23,13 +23,9 @@
         &-item {
             height: 50.625vw;
             width: 100%;
-            padding: 0.5rem 0;
-            filter: grayscale(1);
+            padding: 0.5rem 0;          
         }
-        &-item:hover {
-            filter: grayscale(0%); 
-            box-shadow: .125rem .125rem 1.25rem;
-        }
+       
     }
 }
 
@@ -42,7 +38,6 @@
             padding-bottom: 2rem;
         }
         &__pics {
-            display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
