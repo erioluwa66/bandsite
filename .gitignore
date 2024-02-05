@@ -3,5 +3,4 @@
 /mockup
 /Styles/BandSite-*
 .vscode*
-./Styles/.ds_store
-./Styles/bio.css.map
+*.css.map
