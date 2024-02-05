@@ -27,7 +27,8 @@
             filter: grayscale(1);
         }
         &-item:hover {
-            filter: none;
+            filter: grayscale(0%); 
+            box-shadow: .125rem .125rem 1.25rem;
         }
     }
 }
@@ -41,6 +42,7 @@
             padding-bottom: 2rem;
         }
         &__pics {
+            display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;

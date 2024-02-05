@@ -219,25 +219,22 @@
   .about__main--tittle {
     font-family: "Avenir";
     font-weight: 600;
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.375rem;
+    padding: 36px;
   }
   .about__main--story-box {
     display: flex;
-    justify-content: space-evenly;
   }
   .about__main--story {
     font-size: 0.875rem;
     line-height: 1.375rem;
   }
-  #main-bot {
+  #about-align {
     padding-left: 1.5em;
   }
 }
 @media (min-width: 1280px) {
-  .about {
-    padding: 0 17rem 3rem 17rem;
-  }
   .about__introduction--title {
     margin: 3rem 0 0 -5.75rem;
   }
@@ -248,9 +245,6 @@
   .about__introduction--quote {
     padding-bottom: 2.5rem;
   }
-  .about__introduction--quote--author {
-    padding-bottom: 3.5rem;
-  }
   .about__main--story-box {
     width: 55rem;
   }
@@ -258,7 +252,7 @@
     width: 26.25rem;
     padding-top: 2rem;
   }
-  #main-bot {
+  #about-align {
     padding-left: 2.5rem;
   }
 }
@@ -457,7 +451,8 @@ footer {
   filter: grayscale(1);
 }
 .photo__pics-item:hover {
-  filter: none;
+  filter: grayscale(0%);
+  box-shadow: 0.125rem 0.125rem 1.25rem;
 }
 
 @media (min-width: 768px) {
@@ -470,6 +465,7 @@ footer {
     padding-bottom: 2rem;
   }
   .photo__pics {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
