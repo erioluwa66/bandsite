@@ -450,34 +450,47 @@ footer {
 .hero {
   width: 100vw;
   height: 12rem;
-  background-image: url("./../Assets/Images/hero-bio.jpg");
+  background-image: url("./../Assets/Images/hero-shows.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: left;
-  align-content: center;
 }
 .hero__container {
   width: inherit;
   height: inherit;
   background-color: rgba(50, 50, 50, 0.5);
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
-.hero__tittle {
+.hero__tittle-one {
+  font-size: 1rem;
+  font-family: "Avenir";
+  font-weight: 400;
+  line-height: 1rem;
+  padding: 1rem;
+  color: #FFFFFF;
+  width: 15rem;
+}
+.hero__tittle-two {
   font-size: 1.5rem;
   line-height: 2rem;
   padding: 1rem;
+  font-family: "Avenir";
+  font-family: 600;
   color: #FFFFFF;
-  width: 13rem;
+  width: 16rem;
 }
 
 @media (min-width: 768px) {
   .hero {
     height: 25rem;
   }
-  .hero__tittle {
+  .hero__tittle_one {
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+    width: 31.75rem;
+  }
+  .hero__tittle_tw {
     font-size: 3.75rem;
     line-height: 4.25rem;
     width: 31.75rem;
@@ -490,61 +503,4 @@ footer {
   .hero__tittle {
     padding-left: 11rem;
   }
-}
-.photo {
-  background-color: #FAFAFA;
-  padding: 0 1rem;
-}
-.photo__header {
-  font-family: "Avenir";
-  font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  padding: 2rem 0 1rem 0;
-}
-.photo__pics {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 1.5rem;
-}
-.photo__pics-item {
-  height: 50.625vw;
-  width: 100%;
-  padding: 0.5rem 0;
-}
-
-@media (min-width: 768px) {
-  .photo {
-    padding: 0 1.5rem;
-  }
-  .photo__header {
-    font-size: 2.25rem;
-    line-height: 2.75rem;
-    padding-bottom: 2rem;
-  }
-  .photo__pics {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .photo__pics-item {
-    height: 16.40625vw;
-    width: calc(33% - 10px);
-    padding: 0 0 1.5rem 0;
-  }
-}
-@media (min-width: 1280px) {
-  .photo {
-    padding: 0 11.25rem;
-  }
-  .photo__header {
-    padding: 3rem 0 4rem 0;
-  }
-  .photo__pics {
-    padding-bottom: 1rem;
-  }
-  .photo__pics-item {
-    height: 11.7363vw;
-  }
-}/*# sourceMappingURL=bio.css.map */
+}/*# sourceMappingURL=shows.css.map */

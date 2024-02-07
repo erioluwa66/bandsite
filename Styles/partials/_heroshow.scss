@@ -1,0 +1,69 @@
+@use "./variables" as *;
+@use "./typography" as *;
+@use "./mixins" as *;
+
+// mobile-styling-start 
+.hero {
+    width: 100vw; 
+    height: 12rem;
+    background-image: url("./../Assets/Images/hero-shows.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &__container {
+        width: inherit;
+        height: inherit;
+        background-color: rgba($primary-text, 0.5);
+        display: flex;
+        flex-direction: column;
+        
+    }
+    &__tittle-one {
+        font-size: 1rem;
+        font-family: "Avenir";
+        font-weight: 400;
+        line-height: 1rem;
+        padding: 1rem;
+        color: $primary-text-light;
+        width: 15rem;
+        }
+    &__tittle-two {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding: 1rem;
+        font-family: "Avenir";
+        font-family: 600;
+        color: $primary-text-light;
+        width: 16rem;
+    }
+}
+// mobile-styling-end 
+
+// tablet-styling-start 
+@include tablet {
+    .hero {
+        height: 25rem;
+        &__tittle_one {
+            font-size: 3.75rem;
+            line-height: 4.25rem;
+            width: 31.75rem;
+        }
+        &__tittle_tw {
+            font-size: 3.75rem;
+            line-height: 4.25rem;
+            width: 31.75rem;
+         }
+    }
+}
+// tablet-styling-end
+
+// desktop-styling start
+@include desktop {
+    .hero {
+        height: 41.875rem;
+        &__tittle {
+            padding-left: 11rem;
+        }
+    }
+}
+// desktop-styling-end

@@ -1,10 +1,8 @@
 @use "./variables" as * ;
 @use "./mixins" as * ;
 @use "./typography" as * ;
-@use "./header" as *;
-@use "./hero" as *;
 @use "./about" as *;
-@use "./footer" as *;
+
 
 
  html{
@@ -78,3 +76,228 @@ footer{
     }
 }
 
+.header {
+    height: 80px;
+    width: 100vw;
+    background-color: $primary-text;
+
+    &__navbar-box {
+        display: flex;
+        justify-content: center;
+
+        &-logo {
+            width: 6.25rem;
+            padding: 1rem 0rem;
+        }
+    }
+
+    &__nav-list {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        color: $secondary-text;
+        font-family: "Avenir";
+        font-weight: 600;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+
+        &--one,
+        &--two {
+            text-align: center;
+            padding-bottom: .170rem;
+            font-size: 1rem;
+            width: 50vw;
+        }
+    }
+}
+
+// mobile styling end 
+
+// tablet styling start
+@include tablet {
+    .header {
+        height: 80px;
+        width: 100vw;
+        background-color: $primary-text;
+        &__navbar {
+            display: flex;
+            width: 50vw;
+            align-items: center;
+            height: 100%;
+
+            &-box {
+                width: 6.25rem;
+                margin: 0 1.5rem;
+                padding: 0;
+            }
+        }
+        &__frame-one,
+        &__frame-two {
+            border-bottom: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 5rem;
+            margin: 0 1.75rem;
+        }
+        &__nav-list {
+            display: flex;
+            justify-content: space-around;
+            width: auto;
+            &--one,
+            &--two {
+                font-size: 6.25rem;
+                width: 5rem;
+                padding: 0;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+// tablet styling end 
+
+// desktop styling start 
+@include desktop {
+    .header {
+        height: 5em;
+        width: 100vw;
+        background-color: $primary-text;
+        &__navbar {
+            display: flex;
+            width: 50vw;
+            align-items: center;
+            height: 100%;
+
+            &-box {
+                width: 6.25rem;
+                margin: 0 1.75rem 0 11.25rem;
+                padding: 0;
+            }
+        }
+        &__frame-one,
+        &__frame-two {
+            border-bottom: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 5rem;
+            margin: 0 1.75rem;
+        }
+        &__nav-list {
+            display: flex;
+            justify-content: space-around;
+            width: auto;
+            &--one,
+            &--two {
+                width: 5rem;
+                padding: 0;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+// desktop styling end
+
+.footer {
+    background-color: $primary-text;
+    color: $primary-text-light;
+    padding: 0 1rem;
+    font-family: "Avenir";
+    font-weight: 400;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    &__title {
+        font-family: "Avenir";
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding: 2rem 0 1.5rem 0;
+    }
+    &__icon {
+        padding-bottom: 2rem;
+        &-link {
+            margin-right: 1.6rem;
+        }
+    }
+    &__logo {
+        display: none;
+    }
+    &__contact {
+        &--details__name {
+            font-size: 0.875rem;
+            line-height: 1.375rem;
+            padding-bottom: 1.25rem;
+        }
+        &--details__address,
+        &--details__email {
+            color: $secondary-text;
+            text-decoration: none;
+            margin-bottom: 1.25rem;
+        }
+    }
+    &__copyright {
+        color: $secondary-text;
+        padding-bottom: 2rem;
+    }
+}
+
+@include tablet {
+    .footer {
+        padding: 0 1.5rem;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        &__main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__tittle {
+            font-size: 2.25rem;
+            line-height: 2.75rem;
+            padding: 3rem 0 3.5rem 0;
+        }
+        &__icon {
+            padding: 0 8rem 0 0;
+            position: relative;
+
+            &-link {
+                margin-right: 2rem;
+            }
+        }
+        &__logo {
+            display: inherit;
+            height: 1.5rem;
+            width: 7.5rem;
+        }
+        &__contact-box {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__contact--details {
+            &__name {
+                font-size: 1rem;
+                line-height: 1.5rem;
+                padding-bottom: 1.5rem;
+            }
+            &__address {
+                padding-bottom: 0.25rem;
+            }
+            &__email {
+                margin-bottom: 2.5rem;
+            }
+
+        }
+    }
+}
+
+@include desktop {
+    .footer {
+        padding: 0 11.25rem;
+        &__icon {
+            padding-right: 30rem;
+        }
+    }
+}
