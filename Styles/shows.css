@@ -276,19 +276,22 @@ footer {
   margin: 0;
   width: 100%;
 }
-.header__nav-list--item {
+.header__nav-list--one, .header__nav-list--two {
+  text-align: center;
+  padding-bottom: 0.17rem;
+  font-size: 1rem;
+  width: 50vw;
+  text-decoration: none;
+  color: #E1E1E1;
+}
+.header__nav-list--one:hover, .header__nav-list--two:hover {
+  width: auto;
+  border-bottom: 0.4rem solid #FFFFFF;
+}
+.header__nav-list__nav-item {
   width: 50vw;
   text-align: center;
   border-bottom: 0.1875rem solid transparent;
-}
-.header__nav-list-link {
-  text-decoration: none;
-  color: #E1E1E1;
-  display: block;
-}
-.header__nav-list-link:hover {
-  width: auto;
-  border-bottom: 0.4rem solid #FFFFFF;
 }
 
 @media (min-width: 768px) {
@@ -308,7 +311,7 @@ footer {
     margin: 0 1.5rem;
     padding: 0;
   }
-  .header__frame-one, .header__frame-two {
+  .header__nav-item {
     border-bottom: none;
     display: flex;
     flex-direction: column;
@@ -345,7 +348,7 @@ footer {
     margin: 0 1.75rem 0 11.25rem;
     padding: 0;
   }
-  .header__frame-one, .header__frame-two {
+  .header__nav-item {
     border-bottom: none;
     display: flex;
     flex-direction: column;
@@ -458,7 +461,7 @@ footer {
 }
 .hero {
   width: 100vw;
-  height: 12rem;
+  height: 25rem;
   background-image: url("./../Assets/Images/hero-shows.jpg");
   background-size: cover;
   background-position: center;
@@ -470,15 +473,23 @@ footer {
   background-color: rgba(50, 50, 50, 0.5);
   display: flex;
   flex-direction: column;
+  justify-content: start;
+  padding: 4rem 1rem 2rem 1rem;
 }
 .hero__tittle-one {
   font-size: 1rem;
   font-family: "Avenir";
   font-weight: 400;
   line-height: 1rem;
-  padding: 1rem;
+  padding-bottom: 1rem;
   color: #FFFFFF;
   width: 15rem;
+}
+.hero__tittle-two {
+  font-family: "Avenir";
+  font-size: 700;
+  line-height: 2.75rem;
+  padding-bottom: 4rem;
 }
 .hero__tittle-two {
   font-size: 1.5rem;

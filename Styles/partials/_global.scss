@@ -98,22 +98,25 @@ footer{
         font-weight: 600;
         padding: 0;
         margin: 0;
-        width: 100%; 
-        &--item {
-            width: 50vw;
+        width: 100%;  
+        &--one,
+        &--two {
             text-align: center;
-            border-bottom: .1875rem solid transparent;
-        }
-        &-link {     
+            padding-bottom: .170rem;
+            font-size: 1rem;
+            width: 50vw;
             text-decoration: none;
-            color: $divider-line; 
-            display: block;         
+            color: $divider-line;     
             &:hover {
                width: auto; 
                border-bottom: 0.4rem solid $primary-text-light;
             }
         }
-
+    &__nav-item {
+        width: 50vw;
+        text-align: center;
+        border-bottom: .1875rem solid transparent;      
+      }
     
     }
 }
@@ -138,8 +141,7 @@ footer{
                 padding: 0;
             }
         }
-        &__frame-one,
-        &__frame-two {
+        &__nav-item {
             border-bottom: none;
             display: flex;
             flex-direction: column;
@@ -182,8 +184,7 @@ footer{
                 padding: 0;
             }
         }
-        &__frame-one,
-        &__frame-two {
+        &__nav-item {
             border-bottom: none;
             display: flex;
             flex-direction: column;

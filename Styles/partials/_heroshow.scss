@@ -5,7 +5,7 @@
 // mobile-styling-start 
 .hero {
     width: 100vw; 
-    height: 12rem;
+    height: 25rem;
     background-image: url("./../Assets/Images/hero-shows.jpg");
     background-size: cover;
     background-position: center;
@@ -16,17 +16,24 @@
         background-color: rgba($primary-text, 0.5);
         display: flex;
         flex-direction: column;
-        
+        justify-content: start;
+        padding: 4rem 1rem 2rem 1rem;    
     }
     &__tittle-one {
         font-size: 1rem;
         font-family: "Avenir";
         font-weight: 400;
         line-height: 1rem;
-        padding: 1rem;
+        padding-bottom: 1rem;
         color: $primary-text-light;
         width: 15rem;
         }
+    &__tittle-two{
+        font-family: "Avenir";
+        font-size: 700;
+        line-height: 2.75rem;
+        padding-bottom: 4rem;
+    }
     &__tittle-two {
         font-size: 1.5rem;
         line-height: 2rem;
