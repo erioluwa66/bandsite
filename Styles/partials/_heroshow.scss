@@ -14,34 +14,28 @@
         width: inherit;
         height: inherit;
         background-color: rgba($primary-text, 0.5);
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
         padding: 4rem 1rem 2rem 1rem;    
     }
-    &__tittle-one {
-        font-size: 1rem;
+    &__tittle-main {
+        font-size: 2.3rem;
         font-family: "Avenir";
-        font-weight: 400;
-        line-height: 1rem;
-        padding-bottom: 1rem;
+        font-weight: 600;
+        line-height: 2.5rem;
+        margin: 0;
+        padding: 1rem 0rem 4rem 0rem;
         color: $primary-text-light;
-        width: 15rem;
         }
-    &__tittle-two{
+    &__tittle-sub {
+        font-size: 0.9rem;
+        padding-top: 2rem;
+        margin: 0rem;
         font-family: "Avenir";
-        font-size: 700;
-        line-height: 2.75rem;
-        padding-bottom: 4rem;
-    }
-    &__tittle-two {
-        font-size: 1.5rem;
-        line-height: 2rem;
-        padding: 1rem;
-        font-family: "Avenir";
-        font-family: 600;
+        font-family: 400;
         color: $primary-text-light;
-        width: 16rem;
+    }
+    &__song-imbed {
+        width: 17rem;
+        height: 7rem;
     }
 }
 // mobile-styling-end 
@@ -49,17 +43,24 @@
 // tablet-styling-start 
 @include tablet {
     .hero {
-        height: 25rem;
-        &__tittle_one {
-            font-size: 3.75rem;
-            line-height: 4.25rem;
-            width: 31.75rem;
+        height: 41.5rem;
+        padding: 0 1.5rem 0 1.5rem;
+        &__tittle-sub {
+            font-size: 1.45rem;
+            font-family: "Avenir";
+            font-size: 600;
+            padding-top: 6rem;
         }
-        &__tittle_tw {
+        &__tittle_main {
             font-size: 3.75rem;
-            line-height: 4.25rem;
-            width: 31.75rem;
+            line-height: 4.3rem;
+            padding: 3rem 0rem 4rem 0rem;
+            width: 36.75rem;
          }
+        &__song-imbed { 
+            width: 28rem;
+            height: 9.125rem;
+        }
     }
 }
 // tablet-styling-end
