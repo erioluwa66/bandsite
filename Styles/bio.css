@@ -261,7 +261,8 @@ footer {
   justify-content: center;
 }
 .header__navbar-box-logo {
-  width: 6.25rem;
+  width: 7.5rem;
+  height: 1.25rem;
   padding: 1rem 0rem;
 }
 .header__nav-list {
@@ -275,11 +276,19 @@ footer {
   margin: 0;
   width: 100%;
 }
-.header__nav-list--one, .header__nav-list--two {
-  text-align: center;
-  padding-bottom: 0.17rem;
-  font-size: 1rem;
+.header__nav-list--item {
   width: 50vw;
+  text-align: center;
+  border-bottom: 0.1875rem solid transparent;
+}
+.header__nav-list-link {
+  text-decoration: none;
+  color: #E1E1E1;
+  display: block;
+}
+.header__nav-list-link:hover {
+  width: auto;
+  border-bottom: 0.4rem solid #FFFFFF;
 }
 
 @media (min-width: 768px) {
