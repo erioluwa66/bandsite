@@ -288,7 +288,7 @@ footer {
   width: auto;
   border-bottom: 0.4rem solid #FFFFFF;
 }
-.header__nav-list__nav-item {
+.header__nav-item {
   width: 50vw;
   text-align: center;
   border-bottom: 0.1875rem solid transparent;
@@ -461,7 +461,7 @@ footer {
 }
 .hero {
   width: 100vw;
-  height: 25rem;
+  height: 20rem;
   background-image: url("./../Assets/Images/hero-shows.jpg");
   background-size: cover;
   background-position: center;
@@ -487,12 +487,11 @@ footer {
   padding-top: 2rem;
   margin: 0rem;
   font-family: "Avenir";
-  font-family: 400;
+  font-weight: 400;
   color: #FFFFFF;
 }
-.hero__song-imbed {
-  width: 17rem;
-  height: 7rem;
+.hero__tittle-song {
+  width: 90%;
 }
 
 @media (min-width: 768px) {

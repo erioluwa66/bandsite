@@ -5,7 +5,7 @@
 // mobile-styling-start 
 .hero {
     width: 100vw; 
-    height: 25rem;
+    height: 20rem;
     background-image: url("./../Assets/Images/hero-shows.jpg");
     background-size: cover;
     background-position: center;
@@ -30,12 +30,11 @@
         padding-top: 2rem;
         margin: 0rem;
         font-family: "Avenir";
-        font-family: 400;
+        font-weight: 400;
         color: $primary-text-light;
     }
-    &__song-imbed {
-        width: 17rem;
-        height: 7rem;
+    &__tittle-song {
+        width: 90%;
     }
 }
 // mobile-styling-end 

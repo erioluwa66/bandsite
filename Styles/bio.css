@@ -288,7 +288,7 @@ footer {
   width: auto;
   border-bottom: 0.4rem solid #FFFFFF;
 }
-.header__nav-list__nav-item {
+.header__nav-item {
   width: 50vw;
   text-align: center;
   border-bottom: 0.1875rem solid transparent;
