@@ -19,14 +19,14 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: $font-family;
+    font-family: "Avenir";
     font-size: .8125rem;
     line-height: 1.125rem;
     font-weight: 400;
     @include tablet {
         margin: 0;
         padding: 0;
-        font-family: $font-family;
+        font-family: "Avenir";
         font-size: .875rem;
         line-height: 22px;
         font-weight: 400;
@@ -75,8 +75,9 @@ footer{
         font-weight: 400;
     }
 }
-// mobile styling starts
-.header__navbar {
+//mobile styling starts
+
+.header {
     height: 80px;
     width: 100vw;
     background-color: $primary-text;
@@ -84,8 +85,7 @@ footer{
         display: flex;
         justify-content: center;
         &-logo {
-            width: 7.5rem;
-            height: 1.25rem;
+            width: 6.25rem;
             padding: 1rem 0rem;
         }
     }
@@ -93,12 +93,12 @@ footer{
         list-style-type: none;
         display: flex;
         justify-content: space-around;
-        color: $divider-line;
+        color: $secondary-text;
         font-family: "Avenir";
         font-weight: 400;
         padding: 0;
         margin: 0;
-        width: 100%;  
+        width: 100%;
         &--one,
         &--two {
             text-align: center;
@@ -106,21 +106,13 @@ footer{
             font-size: 1rem;
             width: 50vw;
             text-decoration: none;
-            color: $divider-line;
-            position: relative;     
-            &:hover {
-               color: $primary-text-light; 
-               font-family: "Avenir";
-               font-weight: 700;
-            }
         }
-   
+        &--link {
+            text-decoration: none;
+            color: $primary-text-light;
+        }
+
     }
-     &__nav-item {
-         width: 50vw;
-        text-align: center;
-        border-bottom: .1875rem solid transparent;
-         }
 }
 
 // mobile styling end 
@@ -143,7 +135,7 @@ footer{
                 padding: 0;
             }
         }
-        &__nav-item {
+        &__nav-frame {
             border-bottom: none;
             display: flex;
             flex-direction: column;
@@ -165,7 +157,6 @@ footer{
         }
     }
 }
-
 // tablet styling end 
 
 // desktop styling start 
@@ -179,14 +170,13 @@ footer{
             width: 50vw;
             align-items: center;
             height: 100%;
-
             &-box {
                 width: 6.25rem;
                 margin: 0 1.75rem 0 11.25rem;
                 padding: 0;
             }
         }
-        &__nav-item {
+        &__nav-frame {
             border-bottom: none;
             display: flex;
             flex-direction: column;
@@ -207,7 +197,6 @@ footer{
         }
     }
 }
-
 // desktop styling end
 
 .footer {

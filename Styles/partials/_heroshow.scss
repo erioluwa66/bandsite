@@ -5,16 +5,14 @@
 // mobile-styling-start 
 .hero {
     width: 100vw; 
-    height: 20rem;
+    height: 27.5rem;
     background-image: url("./../Assets/Images/hero-shows.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    &__container {
-        width: inherit;
-        height: inherit;
+    &__container {   
         background-color: rgba($primary-text, 0.5);
-        padding: 4rem 1rem 2rem 1rem;    
+        padding: 0 1rem 0 1rem; 
     }
     &__tittle-main {
         font-size: 2.3rem;
@@ -43,7 +41,6 @@
 @include tablet {
     .hero {
         height: 41.5rem;
-        padding: 0 1.5rem 0 1.5rem;
         &__tittle-sub {
             font-size: 1.45rem;
             font-family: "Avenir";
