@@ -452,65 +452,153 @@ footer {
     padding-right: 30rem;
   }
 }
-.hero {
-  width: 100vw;
-  height: 27.5rem;
-  background-image: url("./../Assets/Images/hero-shows.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.shows {
+  padding: 2rem 1rem;
 }
-.hero__container {
-  background-color: rgba(50, 50, 50, 0.5);
-  padding: 0 1rem 0 1rem;
+.shows__top {
+  display: none;
 }
-.hero__tittle-main {
-  font-size: 2.3rem;
+.shows__title {
+  color: #323232;
+  padding-bottom: 1rem;
   font-family: "Avenir";
-  font-weight: 600;
-  line-height: 2.5rem;
-  margin: 0;
-  padding: 1rem 0rem 4rem 0rem;
-  color: #FFFFFF;
+  font-size: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
-.hero__tittle-sub {
-  font-size: 0.9rem;
-  padding-top: 2rem;
-  margin: 0rem;
+.shows__new {
+  padding: 1.5rem 0 1rem 0;
+  border-bottom: 1px solid #E1E1E1;
+  display: flex;
+  flex-direction: column;
+}
+.shows__date, .shows__venue, .shows__location {
+  color: #AFAFAF;
+  padding-bottom: 1rem;
   font-family: "Avenir";
-  font-weight: 400;
-  color: #FFFFFF;
+  font-size: 400;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
 }
-.hero__tittle-song {
-  width: 90%;
+.shows__date-actual, .shows__venue-actual, .shows__location-actual {
+  padding-bottom: 1.5rem;
+  color: #323232;
+}
+.shows__date-actual {
+  font-family: "Avenir";
+  font-size: 600;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+}
+.shows__venue-actual {
+  font-family: "Avenir";
+  font-size: 400;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+}
+.shows__location-actual {
+  font-family: "Avenir";
+  font-size: 400;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  padding-bottom: 2rem;
+}
+.shows__button {
+  background-color: #323232;
+  color: #FFFFFF;
+  font-family: "Avenir";
+  font-size: 600;
+  width: 18.5rem;
+  height: 3rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+}
+.shows__button:focus {
+  outline-width: 0;
+}
+.shows__button:hover {
+  background-color: #000000;
 }
 
 @media (min-width: 768px) {
-  .hero {
-    height: 41.5rem;
+  .shows {
+    padding: 2rem 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    display: flex;
+    flex-direction: column;
   }
-  .hero__tittle-sub {
-    font-size: 1.45rem;
+  .shows__title {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    padding-bottom: 1.5rem;
+  }
+  .shows__top {
+    display: flex;
+    justify-content: space-between;
     font-family: "Avenir";
-    font-size: 600;
-    padding-top: 6rem;
+    font-size: 400;
+    color: #AFAFAF;
   }
-  .hero__tittle_main {
-    font-size: 3.75rem;
-    line-height: 4.3rem;
-    padding: 3rem 0rem 4rem 0rem;
-    width: 36.75rem;
+  .shows__top-venue, .shows__top-date, .shows__top-location {
+    width: 8.375rem;
+    font-size: 12px;
   }
-  .hero__song-imbed {
-    width: 28rem;
-    height: 9.125rem;
+  .shows__top-venue {
+    padding-left: 2rem;
+  }
+  .shows__hidden {
+    visibility: hidden;
+    width: 10rem;
+  }
+  .shows__new {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .shows__date, .shows__venue, .shows__location {
+    display: none;
+  }
+  .shows__date-actual, .shows__venue-actual, .shows__location-actual {
+    padding-bottom: 0;
+    width: 8.375rem;
+  }
+  .shows__date-actual {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .shows__location-actual {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+  .shows__venue-actual {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+  .shows__button {
+    width: 10rem;
+    height: 3rem;
+  }
+  .shows__venue-actual {
+    padding-left: 2rem;
   }
 }
 @media (min-width: 1280px) {
-  .hero {
-    height: 41.875rem;
+  .shows {
+    padding: 2.5rem 11.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
-  .hero__tittle {
-    padding-left: 11rem;
+  .shows__container {
+    width: 50.25rem;
+  }
+  .shows__new {
+    padding: 1rem 0;
+  }
+  .shows__top {
+    padding-bottom: 0.75rem;
   }
 }/*# sourceMappingURL=shows.css.map */
