@@ -454,7 +454,7 @@ footer {
   font-family: "Avenir";
   font-weight: 600;
   color: #FFFFFF;
-  padding: 4rem 0rem 0rem 0rem;
+  padding: 3.2rem 0rem 0rem 0rem;
   margin: 0rem;
   font-size: 0.9rem;
 }
@@ -462,11 +462,35 @@ footer {
   font-family: "Avenir";
   font-weight: 700;
   margin: 0;
-  line-height: 2.8rem;
   color: #FFFFFF;
   padding: 1rem 0rem 4rem 0rem;
 }
-.hero__tittle__song-details {
+.hero__song-details {
   width: 90%;
-  margin-top: 3rem;
-}/*# sourceMappingURL=shows.css.map */
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 35.5rem;
+  }
+  .hero__tittle-sub {
+    font-family: "Avenir";
+    font-weight: 600;
+    padding-bottom: 6rem;
+    font-size: 1.45rem;
+    padding-left: 1rem;
+  }
+  .hero__tittle-main {
+    font-family: "Avenir";
+    font-weight: 600;
+    font-size: 3.75rem;
+    line-height: 4.3rem;
+    width: 36.75rem;
+    padding-left: 1rem;
+    margin-top: -6.5rem;
+  }
+  .hero__song-details {
+    width: 60%;
+  }
+}
+@incl;/*# sourceMappingURL=shows.css.map */

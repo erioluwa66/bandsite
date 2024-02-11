@@ -19,7 +19,7 @@
             font-family: "Avenir";
             font-weight: 600;
             color: $primary-text-light;
-            padding: 4rem 0rem 0rem 0rem;
+            padding: 3.2rem 0rem 0rem 0rem;
             margin: 0rem;
             font-size: 0.9rem;
         }
@@ -27,13 +27,46 @@
             font-family: "Avenir";
             font-weight: 700;
             margin: 0;
-            line-height: 2.8rem;
             color: $primary-text-light;
             padding: 1rem 0rem 4rem 0rem;
         }
+    }
     &__song-details {
         width: 90%;
-        margin-top: 3rem;
+     }
+    
+ }
+// mobile styling ends//
+
+//tablet styling starts//
+@include tablet {
+.hero {
+    height: 35.5rem;
+    &__tittle {
+        &-sub {
+            font-family: "Avenir";
+            font-weight: 600;
+            padding-bottom: 6rem;
+            font-size: 1.45rem;
+            padding-left: 1rem;
+        }
+        &-main {
+            font-family: "Avenir";
+            font-weight: 600;
+            font-size: 3.75rem;
+            line-height: 4.3rem;
+            width: 36.75rem;
+            padding-left: 1rem;
+            margin-top:-6.5rem;
         }
     }
+    &__song-details {
+        width: 60%;
+    }   
  }
+}
+// tablet styling ends //
+
+// desltop styling starts //
+
+@include
