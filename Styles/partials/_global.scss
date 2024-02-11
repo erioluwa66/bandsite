@@ -127,7 +127,42 @@ footer{
 // mobile header styling end 
 
 // tablet headerstyling start
-@include tablet 
+@include tablet {
+.header {
+    &__navbar {
+        flex-direction: row;
+        &-logo {
+            margin-top: 0rem;
+        }
+        &-image {
+           width: 7.5rem;
+           margin-bottom: 0rem;
+           margin-left: 1.5rem;
+        }
+    }
+    &__nav-list {
+        justify-content: left;
+        align-items: center;   
+        &--item {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            height: 5rem;
+            border-bottom: unset;
+            width: 5rem;
+            margin-left: 3.5rem;            
+        }
+        &--link {
+            width: 5rem;
+            display: block;
+            margin-top: .7125rem;     
+            padding-top: 1.5rem;
+            padding-bottom: 1.4rem;
+            border-bottom: 0.413rem solid transparent;      
+            }
+        }
+    }
+}
 // tablet styling end 
 
 // desktop styling start 
