@@ -321,7 +321,6 @@ footer {
     align-items: center;
     text-align: center;
     height: 5rem;
-    border-bottom: unset;
     width: 5rem;
     margin-left: 3.5rem;
   }
@@ -342,7 +341,6 @@ footer {
   .header__nav-list--item {
     margin-left: 1.77rem;
     margin-right: 1.79rem;
-    border-bottom: unset;
   }
   .header__nav-list--link {
     border-bottom: 0.47rem solid transparent;

@@ -321,7 +321,6 @@ footer {
     align-items: center;
     text-align: center;
     height: 5rem;
-    border-bottom: unset;
     width: 5rem;
     margin-left: 3.5rem;
   }
@@ -342,7 +341,6 @@ footer {
   .header__nav-list--item {
     margin-left: 1.77rem;
     margin-right: 1.79rem;
-    border-bottom: unset;
   }
   .header__nav-list--link {
     border-bottom: 0.47rem solid transparent;
@@ -439,4 +437,36 @@ footer {
   .footer__icon {
     padding-right: 30rem;
   }
+}
+.hero {
+  width: 100vw;
+  height: 27.5rem;
+  background-image: url("./../Assets/Images/hero-shows.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero__container {
+  background-color: rgba(50, 50, 50, 0.5);
+  padding: 0rem 1rem 0 1rem;
+}
+.hero__tittle-sub {
+  font-family: "Avenir";
+  font-weight: 600;
+  color: #FFFFFF;
+  padding: 4rem 0rem 0rem 0rem;
+  margin: 0rem;
+  font-size: 0.9rem;
+}
+.hero__tittle-main {
+  font-family: "Avenir";
+  font-weight: 700;
+  margin: 0;
+  line-height: 2.8rem;
+  color: #FFFFFF;
+  padding: 1rem 0rem 4rem 0rem;
+}
+.hero__tittle__song-details {
+  width: 90%;
+  margin-top: 3rem;
 }/*# sourceMappingURL=shows.css.map */

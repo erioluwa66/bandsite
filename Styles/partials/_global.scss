@@ -149,8 +149,7 @@ footer{
             display: flex;
             align-items: center;
             text-align: center;
-            height: 5rem;
-            border-bottom: unset;
+            height: 5rem;        
             width: 5rem;
             margin-left: 3.5rem;            
         }
@@ -165,19 +164,20 @@ footer{
         }
     }
 }
-// tablet styling end 
+// tablet header styling end 
+
+// desktop header styling start
 @include desktop {
     .header {
         &--image {
             margin-left: 11.35rem;
             margin-right: 1.68rem
         }
-
         &__nav-list {
             &--item {
                 margin-left: 1.77rem;
                 margin-right: 1.79rem;
-                border-bottom: unset;
+                
             }
             &--link {
                 border-bottom: 0.47rem solid transparent;
@@ -186,9 +186,9 @@ footer{
     }
 }
 
-// desktop styling start 
+ 
 
-// desktop styling end
+// desktop header styling end
 
 .footer {
     background-color: $primary-text;

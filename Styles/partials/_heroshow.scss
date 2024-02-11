@@ -2,83 +2,38 @@
 @use "./typography" as *;
 @use "./mixins" as *;
 
-/ mobile-styling-start
+// mobile-styling-start
  .hero {
-    width: 100vw;
-    height: 27.5rem;
-    background-image: url("./../Assets/Images/hero-shows.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    &__container {
-        background-color: rgba($primary-text, 0.5);
-        padding: 0 1rem 0 1rem;
-    }
-
-    &__tittle-main {
-        font-size: 2.3rem;
-        font-family: "Avenir";
-        font-weight: 600;
-        line-height: 2.5rem;
-        margin: 0;
-        padding: 1rem 0rem 4rem 0rem;
-        color: $primary-text-light;
-    }
-
-    &__tittle-sub {
-        font-size: 0.9rem;
-        padding-top: 2rem;
-        margin: 0rem;
-        font-family: "Avenir";
-        font-weight: 400;
-        color: $primary-text-light;
-    }
-
-    &__tittle-song {
-        width: 90%;
-    }
-}
-
-// mobile-styling-end 
-
-// tablet-styling-start 
-@include tablet {
-    .hero {
-        height: 41.5rem;
-
-        &__tittle-sub {
-            font-size: 1.45rem;
+     width: 100vw;
+     height: 27.5rem;
+     background-image: url("./../Assets/Images/hero-shows.jpg");
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     &__container {      
+        background-color: rgba($primary-text, 0.5); 
+        padding: 0rem 1rem 0 1rem;;    
+     }
+     &__tittle {
+        &-sub {
             font-family: "Avenir";
-            font-size: 600;
-            padding-top: 6rem;
+            font-weight: 600;
+            color: $primary-text-light;
+            padding: 4rem 0rem 0rem 0rem;
+            margin: 0rem;
+            font-size: 0.9rem;
         }
-
-        &__tittle_main {
-            font-size: 3.75rem;
-            line-height: 4.3rem;
-            padding: 3rem 0rem 4rem 0rem;
-            width: 36.75rem;
+        &-main {
+            font-family: "Avenir";
+            font-weight: 700;
+            margin: 0;
+            line-height: 2.8rem;
+            color: $primary-text-light;
+            padding: 1rem 0rem 4rem 0rem;
         }
-
-        &__song-imbed {
-            width: 28rem;
-            height: 9.125rem;
-        }
-    }
-}
-
-// tablet-styling-end
-
-// desktop-styling start
-@include desktop {
-    .hero {
-        height: 41.875rem;
-
-        &__tittle {
-            padding-left: 11rem;
+    &__song-details {
+        width: 90%;
+        margin-top: 3rem;
         }
     }
-}
-
-// desktop-styling-end
+ }
