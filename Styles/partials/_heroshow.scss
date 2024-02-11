@@ -69,4 +69,38 @@
 
 // desltop styling starts //
 
-@include
+@include desktop {
+    .hero {
+        height: 35.5rem;
+        &__container {
+           height: 100vw;
+           height: inherit;
+           padding: 0rem 11.4rem 0 11.4rem
+        }
+        &__tittle {
+            font-family: "Avenir";
+            font-weight: 600;
+            &-sub {
+                padding-top: 9.8rem;
+                font-size: 1.47rem;     
+            }
+            &-main {
+                width: 33.9rem;
+                font-size: 3.75rem;
+                line-height: 4.1rem;
+            }
+        }
+        &__song {
+            height: 26.8125rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            &-details {
+               width: 26.9rem;
+               height: 9.4rem; 
+               margin-top: -11.5rem;
+            }
+        }
+
+    }
+}

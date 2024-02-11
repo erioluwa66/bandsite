@@ -493,4 +493,37 @@ footer {
     width: 60%;
   }
 }
-@incl;/*# sourceMappingURL=shows.css.map */
+@media (min-width: 1280px) {
+  .hero {
+    height: 35.5rem;
+  }
+  .hero__container {
+    height: 100vw;
+    height: inherit;
+    padding: 0rem 11.4rem 0 11.4rem;
+  }
+  .hero__tittle {
+    font-family: "Avenir";
+    font-weight: 600;
+  }
+  .hero__tittle-sub {
+    padding-top: 9.8rem;
+    font-size: 1.47rem;
+  }
+  .hero__tittle-main {
+    width: 33.9rem;
+    font-size: 3.75rem;
+    line-height: 4.1rem;
+  }
+  .hero__song {
+    height: 26.8125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .hero__song-details {
+    width: 26.9rem;
+    height: 9.4rem;
+    margin-top: -11.5rem;
+  }
+}/*# sourceMappingURL=shows.css.map */
