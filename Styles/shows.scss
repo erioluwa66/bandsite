@@ -7,11 +7,13 @@
 
 .shows {
     padding: 2rem 1rem;
+
     &__top {
         display: none;
     }
-    &__header {
-        color: $color-black;
+
+    &__title {
+        color: $primary-text;
         padding-bottom: 1rem;
         font-family: 'avenir-bold';
         font-size: 1.5rem;
@@ -89,7 +91,7 @@
         display: flex;
         flex-direction: column;
 
-        &__header {
+        &__title {
             font-size: 2.25rem;
             line-height: 2.75rem;
             padding-bottom: 1.5rem;
@@ -113,7 +115,7 @@
             }
         }
 
-        &__absent {
+        &__hidden {
             visibility: hidden;
             width: 10rem;
         }
@@ -168,7 +170,7 @@
         flex-direction: row;
         justify-content: space-between;
 
-        &__box {
+        &__container {
             width: 50.25rem;
         }
 

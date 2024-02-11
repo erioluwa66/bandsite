@@ -31,46 +31,93 @@ let showData = [
 }
 ];
 
-function displayShows(showsData) {
-    let showsContainer = document.querySelector(".shows")
+   function displayShows(showData) {
+    const shows = document.querySelector(".shows")
 
-    let showsHeader = document.createElement("h2");
-    showsHeader.classList.add("shows__header");
-    showsHeader.innerText = "Shows";
-    showsContainer.appendChild(showsHeader);
+    const showsTitle = document.createElement("h2");
+    showsTitle.classList.add("shows__title");
+    showsTitle.innerText = "Shows";
+    shows.appendChild(showsTitle);
 
-    let showsBox = document.createElement("div");
-    showsBox.classList.add("shows__box");
-    showsContainer.appendChild(showsBox);
+    const showsContainer = document.createElement("div");
+    showsContainer.classList.add("shows__container")
+    shows.appendChild(showsContainer);
 
-    let dataSection = document.createElement("div");
-    dataSection.classList.add("shows__top");
-    showsBox.appendChild(dataSection);
+    const infoDiv = document.createElement("div");
+    infoDiv.classList.add("shows__top");
+    showsContainer.appendChild(infoDiv);
 
-    let datesMain = document.createElement("h3");
-    datesMain.classList.add("shows__top-date");
-    datesMain.innertext ="DATES";
-    dataSection.appendChild(datesMain);
+    const datesTitle = document.createElement("h3");
+    datesTitle.classList.add("shows__top-date");
+    datesTitle.innerText = "DATES";
+    infoDiv.appendChild(datesTitle);
 
-    let venueMain = document.createElement("h3");
-    venueMain.classList.add("shows__top-venue");
-    venueMain.innerText = "'VENUE";
-    dataSection.appendChild(venueMain);
+    const venuesTitle = document.createElement("h3");
+    venuesTitle.classList.add("shows__top-venue");
+    venuesTitle.innerText = "VENUE";
+    infoDiv.appendChild(venuesTitle);
 
-    let locationMain = document.createElement("h3");
-    locationMain.classList.add("shows__top-location");
-    locationMain.innerText = "LOCATION";
-    dataSection.appendChild(locationMain);
+    const locationsTitle = document.createElement("h3");
+    locationsTitle.classList.add("shows__top-location");
+    locationsTitle.innerText = "LOCATION";
+    infoDiv.appendChild(locationsTitle);
 
-    let absentElement = document.createElement("span");
-    absentElement.classList.add("shows__absent");
-    absentElement.innerText =".";
-    dataSection.appendChild(absentElement);
+    const hiddenEle = document.createElement("span");
+    hiddenEle.classList.add("shows__hidden")
+    hiddenEle.innerText = ".";
+    infoDiv.appendChild(hiddenEle);
+
+
+    for(let key in showData) {
+
+        //container div
+        const showsParent = document.createElement("div");
+        showsParent.classList.add("shows__new");
+        showsContainer.appendChild(showsParent);
+
+
+        //Date
+        const dateTitle = document.createElement("h4");
+        dateTitle.classList.add("shows__date");
+        dateTitle.innerText = "DATE";
+        showsParent.appendChild(dateTitle);
+
+        //Actual Date
+        const dateShow = document.createElement("h3");
+        dateShow.classList.add("shows__date-actual");
+        dateShow.innerText = arrDates[key]["date"];
+        showsParent.appendChild(dateShow);
+
+        //Venue
+        const venueTitle = document.createElement("h4");
+        venueTitle.classList.add("shows__venue");
+        venueTitle.innerText = "VENUE";
+        showsParent.appendChild(venueTitle);
+
+        //Actual Venue
+        const venueShow = document.createElement("h3");
+        venueShow.classList.add("shows__venue-actual");
+        venueShow.innerText = arrDates[key]["venue"];
+        showsParent.appendChild(venueShow);
+
+        //Location
+        const locationTitle = document.createElement("h4");
+        locationTitle.classList.add("shows__location");
+        locationTitle.innerText = "LOCATION";
+        showsParent.appendChild(locationTitle);
+
+        //Actual Location
+        const locationShow = document.createElement("h3");
+        locationShow.classList.add("shows__location-actual");
+        locationShow.innerText = arrDates[key]["location"];
+        showsParent.appendChild(locationShow);
+
+        //Button
+        const buyTickets = document.createElement("button");
+        buyTickets.classList.add("shows__button");
+        buyTickets.innerText = "BUY TICKETS";
+        showsParent.appendChild(buyTickets);
+    }
 }
 
-for (let key in showsData) {
- 
-    let showsParent = document.createElement ("div");
-    showsParent.classList.add("shows__new");
-    showsBox.appendChild(showsParent);
-}
+displayShows(showData);
