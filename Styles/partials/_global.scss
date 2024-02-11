@@ -99,6 +99,8 @@ footer{
     &__nav-list {
         list-style: none;
         display: flex;
+        font-family: "Avenir";
+        font-weight: 600;
         flex-direction: row;
         justify-content: space-around;
         margin-top: 0.5rem;
@@ -109,7 +111,7 @@ footer{
             border-bottom: 0.2125rem solid transparent; 
             #active {
                 color: $primary-text-light;
-                border-bottom: 0.42rem solid $primary-text-light;
+                border-bottom: 0.3.125rem solid $primary-text-light;
             }
         }
         &--link {
@@ -118,7 +120,7 @@ footer{
             margin-top: 1.32rem;
             color: $secondary-text;
             &:hover {
-                border-bottom: 0.50rem solid $primary-text-light;
+                border-bottom: .3125rem solid $primary-text-light;
             }
         }
     }
@@ -164,6 +166,25 @@ footer{
     }
 }
 // tablet styling end 
+@include desktop {
+    .header {
+        &--image {
+            margin-left: 11.35rem;
+            margin-right: 1.68rem
+        }
+
+        &__nav-list {
+            &--item {
+                margin-left: 1.77rem;
+                margin-right: 1.79rem;
+                border-bottom: unset;
+            }
+            &--link {
+                border-bottom: 0.47rem solid transparent;
+            }
+        }
+    }
+}
 
 // desktop styling start 
 
