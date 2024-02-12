@@ -568,41 +568,43 @@ footer {
   width: 17.9rem;
   height: 3rem;
   border: none;
-  border-radius: 4px;
-  font-size: 0.875rem;
-  line-height: 1.375rem;
+  border-radius: 0.315rem;
+  font-size: 0.815rem;
 }
 .shows__button:focus {
   outline-width: 0;
 }
 .shows__button:hover {
   background-color: #FAFAFA;
+  box-shadow: 0.125rem 0.125rem 1.25rem;
 }
 
 @media (min-width: 768px) {
   .shows {
-    padding: 2rem 1.5rem;
+    margin: 0rem 1.5rem;
     font-size: 0.875rem;
-    line-height: 1.25rem;
     display: flex;
     flex-direction: column;
   }
   .shows__title {
     font-size: 2.25rem;
-    line-height: 2.75rem;
-    padding-bottom: 1.5rem;
+    font-family: "Avenir";
+    font-weight: 700;
+    color: #323232;
+    margin: 2rem 0 2rem 0;
   }
   .shows__subtitle {
     display: flex;
     justify-content: space-between;
     font-family: "Avenir";
     font-weight: 600;
-    color: #FFFFFF .shows__subtitle -venue, .shows__subtitle -date, .shows__subtitle -location;
-    color-width: 8.375rem;
-    color-font-size: 12px;
+    color: #AFAFAF;
+    margin-top: -3rem;
   }
-  .shows__subtitle-venue {
-    padding-left: 2rem;
+  .shows__subtitle-venue, .shows__subtitle-date, .shows__subtitle-location {
+    align-self: center;
+    font-size: 0.75rem;
+    color: #AFAFAF;
   }
   .shows__hidden {
     visibility: hidden;
@@ -620,29 +622,15 @@ footer {
     padding-bottom: 0;
     width: 8.375rem;
   }
-  .shows__date-actual {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-  .shows__location-actual {
-    font-size: 0.875rem;
-    line-height: 1.375rem;
-  }
-  .shows__venue-actual {
-    font-size: 0.875rem;
-    line-height: 1.375rem;
-  }
   .shows__button {
     width: 10rem;
     height: 3rem;
-  }
-  .shows__venue-actual {
-    padding-left: 2rem;
+    margin-right: 3rem;
   }
 }
 @media (min-width: 1280px) {
   .shows {
-    padding: 2.5rem 11.25rem;
+    margin: 0rem 11.25rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -654,6 +642,6 @@ footer {
     padding: 1rem 0;
   }
   .shows__subtitle {
-    padding-bottom: 0.75rem;
+    margin: 1rem 0 1rem 0rem;
   }
 }/*# sourceMappingURL=shows.css.map */
