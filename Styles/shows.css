@@ -533,7 +533,7 @@ footer {
 .shows__top {
   display: none;
 }
-.shows__header {
+.shows__title {
   color: #323232;
   padding-bottom: 1rem;
   font-family: "Avenir";
@@ -561,7 +561,7 @@ footer {
 }
 .shows__date-actual {
   font-family: "Avenir";
-  font-weight: 400;
+  font-weight: 600;
   font-size: 0.875rem;
   line-height: 1.375rem;
 }
@@ -605,7 +605,7 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  .shows__header {
+  .shows__title {
     font-size: 2.25rem;
     line-height: 2.75rem;
     padding-bottom: 1.5rem;
@@ -614,17 +614,15 @@ footer {
     display: flex;
     justify-content: space-between;
     font-family: "Avenir";
-    font-weight: 400;
-    color: #AFAFAF;
-  }
-  .shows__top-venue, .shows__top-date, .shows__top-location {
-    width: 8.375rem;
-    font-size: 12px;
+    font-weight: 600;
+    color: #FFFFFF .shows__top -venue, .shows__top -date, .shows__top -location;
+    color-width: 8.375rem;
+    color-font-size: 12px;
   }
   .shows__top-venue {
     padding-left: 2rem;
   }
-  .shows__absent {
+  .shows__hidden {
     visibility: hidden;
     width: 10rem;
   }
@@ -667,7 +665,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
   }
-  .shows__box {
+  .shows__container {
     width: 50.25rem;
   }
   .shows__new {

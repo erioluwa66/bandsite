@@ -1,4 +1,4 @@
-let showData = [
+const arrDates = [
 {
     date: "Mon Sep 09 2024",
     venue: "Ronald Lane",
@@ -31,7 +31,7 @@ let showData = [
 }
 ];
 
-   function displayShows(showData) {
+   function displayShows(arr) {
     const shows = document.querySelector(".shows")
 
     const showsTitle = document.createElement("h2");
@@ -68,7 +68,7 @@ let showData = [
     infoDiv.appendChild(hiddenEle);
 
 
-    for(let key in showData) {
+    for(let key in arrDates) {
 
         //container div
         const showsParent = document.createElement("div");
@@ -120,4 +120,4 @@ let showData = [
     }
 }
 
-displayShows(showData);
+displayShows(arrDates);
