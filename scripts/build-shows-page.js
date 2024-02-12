@@ -44,28 +44,28 @@ const arrDates = [
     shows.appendChild(showsContainer);
 
     const infoDiv = document.createElement("div");
-    infoDiv.classList.add("shows__top");
+    infoDiv.classList.add("shows__subtitle");
     showsContainer.appendChild(infoDiv);
 
     const datesTitle = document.createElement("h3");
-    datesTitle.classList.add("shows__top-date");
+    datesTitle.classList.add("shows__subtitle-date");
     datesTitle.innerText = "DATES";
     infoDiv.appendChild(datesTitle);
 
     const venuesTitle = document.createElement("h3");
-    venuesTitle.classList.add("shows__top-venue");
+    venuesTitle.classList.add("shows__subtitle-venue");
     venuesTitle.innerText = "VENUE";
     infoDiv.appendChild(venuesTitle);
 
     const locationsTitle = document.createElement("h3");
-    locationsTitle.classList.add("shows__top-location");
+    locationsTitle.classList.add("shows__subtitle-location");
     locationsTitle.innerText = "LOCATION";
     infoDiv.appendChild(locationsTitle);
 
-    const hiddenEle = document.createElement("span");
-    hiddenEle.classList.add("shows__hidden")
-    hiddenEle.innerText = ".";
-    infoDiv.appendChild(hiddenEle);
+    const hiddenElement = document.createElement("span");
+    hiddenElement.classList.add("shows__hidden")
+    hiddenElement.innerText = ".";
+    infoDiv.appendChild(hiddenElement);
 
 
     for(let key in arrDates) {
