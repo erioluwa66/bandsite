@@ -1,22 +1,22 @@
 //Default comments array
 let comments = [
   {
-    name: "Micheal Lyons",
-    date: "12/18/2018",
+    name: "Victor Pinto",
+    date: "11/02/2023",
     comment:
-      "They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greatest opening of a concert I have EVER witnessed."
+      "This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains."
   },
   {
-    name: "Gary Wong",
+    name: "Christina Cabrera",
     date: "12/12/2018",
     comment:
-      "Every time I see him shred I feel so motivated to get off my couch and hop on my board. He’s so talented! I wish I can ride like him one day so I can really enjoy myself!"
+      "I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life I could relive, this would be it. What an incredible day."
   },
   {
-    name: "Theodore Duncan",
-    date: "11/15/2018",
+    name: "Isaac Tadesse",
+    date: "10/20/2023",
     comment:
-      "How can someone be so good!!! You can tell he lives for this and loves to do it every day. Everytime I see him I feel instantly happy! He’s definitely my favorite ever!"
+      "I can't stop listening. Every time I hear one of their songs - the vocals - it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can't get enough."
   }
 ];
 
