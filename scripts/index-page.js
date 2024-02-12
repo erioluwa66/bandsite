@@ -8,7 +8,7 @@ let comments = [
   },
   {
     name: "Christina Cabrera",
-    date: "12/12/2018",
+    date: "10/28/2023",
     comment:
       "I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life I could relive, this would be it. What an incredible day."
   },
@@ -20,100 +20,96 @@ let comments = [
   }
 ];
 
-//Function start
+
 function displayComments(arr) {
-  //Used DOM  API to connect my JS to my HTML with the empty div I created
-  let commentContainer = document.querySelector(".comment__default-comment");
+  let commentContainer = document.querySelector(".comment__section");
 
   for (let i = 0; i < arr.length; i++) {
-    //Div that holds all of my default comment content
+    // default comment div
     let defaultContainer = document.createElement("div");
     defaultContainer.classList.add("comment__default");
     commentContainer.appendChild(defaultContainer);
 
-    //image container
-    let imageContainer = document.createElement("div");
-    imageContainer.classList.add("comment__image-container-one");
-    defaultContainer.appendChild(imageContainer);
+    //photo container
+    let photoContainer = document.createElement("div");
+    photoContainer.classList.add("comment__photo-box-one");
+    defaultContainer.appendChild(photoContainer);
 
-    // div that holds my header elements of my default comments
+    // default comments
     let headerContainer = document.createElement("div");
     headerContainer.classList.add("comment__header");
     defaultContainer.appendChild(headerContainer);
 
-    //image
-    let image = document.createElement("div");
-    image.classList.add("comment__header--image-one");
-    imageContainer.appendChild(image);
+    //photo
+    let photo = document.createElement("div");
+    photo.classList.add("comment__header--photo-one");
+    photoContainer.appendChild(photo);
 
-    //name
+    //header name
     let name = document.createElement("h2");
     name.classList.add("comment__header--name");
     name.innerText = arr[i]["name"];
     headerContainer.appendChild(name);
 
-    //date
+    //header date
     let date = document.createElement("h3");
     date.classList.add("comment__header--date");
     date.innerText = arr[i]["date"];
     headerContainer.appendChild(date);
 
-    //comment container
+    //comment box
     let textContainer = document.createElement("div");
-    textContainer.classList.add("comment__text-container-default");
+    textContainer.classList.add("comment__text-box-main");
     defaultContainer.appendChild(textContainer);
 
-    //comment
+    //actualcomment
     let comment = document.createElement("p");
-    comment.classList.add("comment__text-container-default--comment");
+    comment.classList.add("comment__text-box-main--comment");
     comment.innerText = arr[i]["comment"];
     textContainer.appendChild(comment);
   }
 }
 displayComments(comments);
 
-//use Dom APi to get access to the form in html
-const form = document.querySelector(".comment__input-container");
 
-//attach an event listener on the form of type submit
+const form = document.querySelector(".comment__input-box");
+
+
 form.addEventListener("submit", submitEvent => {
-  //prevents page form reloading upon clicking submit button
   submitEvent.preventDefault();
 
   const newComment = {};
   newComment.name = submitEvent.target.name.value;
   newComment.comment = submitEvent.target.comment.value;
 
-  let commentContainer = document.querySelector(".comment__default-comment");
-
-  //Div that holds all info
+  let commentContainer = document.querySelector(".comment__section");
+ 
   let defaultContainer = document.createElement("div");
   defaultContainer.classList.add("comment__default");
   commentContainer.appendChild(defaultContainer);
 
-  //image container
-  let imageContainer = document.createElement("div");
-  imageContainer.classList.add("comment__image-container-one");
-  defaultContainer.appendChild(imageContainer);
 
-  // div that holds my header elements of my default comments
+  let photoContainer = document.createElement("div");
+  photoContainer.classList.add("comment__photo-box-one");
+  defaultContainer.appendChild(photoContainer);
+
+
   let headerContainer = document.createElement("div");
   headerContainer.classList.add("comment__header");
   defaultContainer.appendChild(headerContainer);
 
-  //image
-  let image = document.createElement("div");
-  image.classList.add("comment__header--image-one");
-  imageContainer.appendChild(image);
 
-  //name
+  let photo = document.createElement("div");
+  photo.classList.add("comment__header--photo-one");
+  photoContainer.appendChild(photo);
+
+
   let name = document.createElement("h2");
   name.classList.add("comment__header--name");
   name.innerText = newComment.name;
   headerContainer.appendChild(name);
 
-  //setting the current date
-  let today = new Date();
+  //date
   let dd = String(today.getDate()).padStart(2, "0");
   let mm = String(today.getMonth() + 1).padStart(2, "0");
   let yyyy = today.getFullYear();
@@ -126,22 +122,19 @@ form.addEventListener("submit", submitEvent => {
   date.classList.add("comment__header--date");
   headerContainer.appendChild(date);
 
-  //text container
   let textContainer = document.createElement("div");
-  textContainer.classList.add("comment__text-container-default");
+  textContainer.classList.add("comment__text-box-main");
   defaultContainer.appendChild(textContainer);
 
-  //comment
+
   let comment = document.createElement("p");
-  comment.classList.add("comment__text-container-default--comment");
+  comment.classList.add("comment__text-box-main--comment");
   comment.innerText = newComment.comment;
   textContainer.appendChild(comment);
 
-  //inserts my comments above the default comments
-  let top = document.querySelector(".comment__default-comment");
+  let top = document.querySelector(".comment__section");
   top.insertBefore(defaultContainer, top.childNodes[0]);
 
-  //clears my input from the entry fields
-  let clearInput = document.querySelector(".comment__input-container");
+  let clearInput = document.querySelector(".comment__input-box");
   clearInput.reset();
 });

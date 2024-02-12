@@ -77,20 +77,22 @@
         margin: 2rem 0 2.5rem;
     }
 
-    &__image {
+    &__photo {
         width: 3rem;
         height: 3rem;
         border-radius: 2rem;
-        margin-top: 1.4rem;
+        margin-top: 1rem;
+        margin-right: 1rem;
     }
 
-    &__name-container {
+    &__name-box {
         display: flex;
         justify-content: space-between;
         border-bottom: 1px solid $divider-line;
+        border-radius: 0.25rem;
     }
 
-    &__input-container {
+    &__input-box {
         display: flex;
         flex-direction: column;
 
@@ -104,7 +106,7 @@
         }
     }
 
-    &__text-container {
+    &__text-box {
         font-family: "Avenir";
         font-weight: 400;
         font-size: 0.8125rem;
@@ -116,7 +118,7 @@
         resize: none;
 
         &:focus {
-            border: 2px solid $primary-text;
+            border: 1.5px solid $primary-text;
             outline-width: 0;
         }
 
@@ -160,7 +162,7 @@
         display: flex;
         justify-content: space-between;
 
-        &--image-one {
+        &--photo-one {
             height: 3rem;
             width: 3rem;
             background-color: $divider-line;
@@ -191,7 +193,7 @@
         }
     }
 
-    &__text-container-default {
+    &__text-box-main {
         display: flex;
 
         &--comment {
@@ -199,7 +201,7 @@
             width: 96%;
             color: $primary-text;
             font-size: 0.8125rem;
-           font-family: "Avenir";
+            font-family: "Avenir";
             font-weight: 400;
             margin: 0;
             padding: 1rem 0 1.5rem 1rem;
@@ -213,30 +215,24 @@
 
 @include tablet {
     .comment {
-        background-color: $primary-text-light;
-        margin: 0 1.5rem 0 1.5rem;
-
         &__title {
-            font-family: "Avenir";
-            font-weight: 700;
-            font-size: 2.25rem;
-            margin: 3rem 0 3.5rem;
+            font-size: 2.35rem;
+            line-height: 2.75rem;
+            margin: 3rem 0 3.5rem 0;
         }
 
-        &__image {
-            width: 3rem;
-            height: 3rem;
-            border-radius: 2rem;
-            margin: 1.4rem 1.25rem 0 0;
+        &__photo {
+            width: 3.437rem;
+            margin: 0rem;
         }
 
-        &__name-container {
+        &__name-box {
             display: flex;
             justify-content: center;
             border: none;
         }
 
-        &__border-container {
+        &__border-box {
             display: flex;
             justify-content: center;
         }
@@ -246,7 +242,7 @@
             border: 1px solid $divider-line;
         }
 
-        &__input-container {
+        &__input-box {
             display: flex;
             flex-direction: column;
 
@@ -260,7 +256,7 @@
             }
         }
 
-        &__text-container {
+        &__text-box {
             font-family: "Avenir";
             font-weight: 400;
             font-size: 1rem;
@@ -310,7 +306,7 @@
             }
         }
 
-        &__default-comment {
+        &__section {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -325,7 +321,7 @@
             display: flex;
             justify-content: flex-start;
 
-            &--image-one {
+            &--photo-one {
                 position: absolute;
                 height: 3rem;
                 width: 3rem;
@@ -341,8 +337,7 @@
                 font-family: "Avenir";
                 font-weight: 600;
                 font-size: 1rem;
-                padding: 1.75rem 1rem 0 3.9375rem;
-                margin: 0;
+                margin-left: 3.5rem;
             }
 
             &--date {
@@ -350,24 +345,18 @@
                 font-family: "Avenir";
                 font-weight: 400;
                 font-size: 1rem;
-                margin: 0;
-                padding: 1.75rem 0 0 0;
+                margin-left: 13rem;
             }
         }
 
-        &__text-container-default {
+        &__text-box-main {
             display: flex;
             justify-content: flex-end;
             border-bottom: 1px solid $divider-line;
 
             &--comment {
                 color: $primary-text;
-                width: 29rem;
-                font-size: 0.875rem;
-                font-family: "Avenir";
-                font-weight: 400;
-                margin: 0;
-                padding: 1rem 0 1.5rem 0;
+                width: 25rem;
             }
         }
     }
@@ -380,91 +369,17 @@
 @include desktop {
     .comment {
         background-color: $primary-text-light;
-        margin: 0 11.25rem 0 11.25rem;
+        margin: 0 10.5rem 0 10.5rem;
 
         &__title {
-            font-family: "Avenir";
-            font-weight: 700;
-            font-size: 2.25rem;
-            margin: 3rem 0 3.5rem;
+            padding-left: 10.25rem;
         }
 
-        &__image {
-            width: 3rem;
-            height: 3rem;
-            border-radius: 2rem;
-            margin: 1.4rem 1.25rem 0 0;
-        }
+        &__photo {
+            width: 2.9rem;
 
-        &__name-container {
-            display: flex;
-            justify-content: center;
-        }
-
-        &__input-container {
-            display: flex;
-            flex-direction: column;
-
-            &--text {
-                font-family: "Avenir";
-                font-weight: 600;
-                color: $secondary-text;
-                font-size: 0.75rem;
-                line-height: 1.25rem;
-                margin: 0 0 0.5rem 0;
-            }
-        }
-
-        &__text-container {
-            font-family: "Avenir";
-            font-weight: 400;
-            font-size: 0.8125rem;
-            border: 1px solid $primary-text;
-            border-radius: 0.25rem;
-            width: 28.75rem;
-            background-color: $alternative-text;
-            border-color: $secondary-text;
-            resize: none;
-
-            &:focus {
-                border: 1px solid $primary-text;
-                outline-width: 0;
-            }
-
-            &--one {
-                margin: 0 0 1.5rem 0;
-                height: 3rem;
-                padding: 0.625rem 1rem 0 1rem;
-            }
-
-            &--two {
-                padding: 0.625rem 1rem 0 1rem;
-                height: 6rem;
-                margin: 0 0 1.5rem 0;
-            }
-        }
-
-        &__button {
-            font-family: "Avenir";
-            font-weight: 600;
-            font-size: 1rem;
-            background-color: $primary-text;
-            border-style: none;
-            height: 3rem;
-            border-radius: 0.25rem;
-            color: $primary-text-light;
-            text-align: center;
-            width: 10rem;
-            margin: 0 0 1.5rem 0;
-            outline-width: 0;
-            padding: 0;
-            align-self: flex-end;
-
-            &:hover {
-                background-color: $hover-state;
-            }
-        }
+         }
     }
 }
 
-/* desktop-styling-end */
+// desktop-styling-end 

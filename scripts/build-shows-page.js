@@ -68,51 +68,41 @@ const arrDates = [
     infoDiv.appendChild(hiddenElement);
 
 
-    for(let key in arrDates) {
-
-        //container div
+    for(let key in arrDates) {    
         const showsParent = document.createElement("div");
         showsParent.classList.add("shows__new");
         showsContainer.appendChild(showsParent);
-
-
-        //Date
+  
         const dateTitle = document.createElement("h4");
         dateTitle.classList.add("shows__date");
         dateTitle.innerText = "DATE";
         showsParent.appendChild(dateTitle);
-
-        //Actual Date
+       
         const dateShow = document.createElement("h3");
         dateShow.classList.add("shows__date-actual");
         dateShow.innerText = arrDates[key]["date"];
         showsParent.appendChild(dateShow);
-
-        //Venue
+     
         const venueTitle = document.createElement("h4");
         venueTitle.classList.add("shows__venue");
         venueTitle.innerText = "VENUE";
         showsParent.appendChild(venueTitle);
-
-        //Actual Venue
+       
         const venueShow = document.createElement("h3");
         venueShow.classList.add("shows__venue-actual");
         venueShow.innerText = arrDates[key]["venue"];
         showsParent.appendChild(venueShow);
-
-        //Location
+     
         const locationTitle = document.createElement("h4");
         locationTitle.classList.add("shows__location");
         locationTitle.innerText = "LOCATION";
         showsParent.appendChild(locationTitle);
 
-        //Actual Location
         const locationShow = document.createElement("h3");
         locationShow.classList.add("shows__location-actual");
         locationShow.innerText = arrDates[key]["location"];
         showsParent.appendChild(locationShow);
-
-        //Button
+       
         const buyTickets = document.createElement("button");
         buyTickets.classList.add("shows__button");
         buyTickets.innerText = "BUY TICKETS";

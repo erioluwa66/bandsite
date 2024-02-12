@@ -550,22 +550,24 @@ footer {
   font-size: 1.5rem;
   margin: 2rem 0 2.5rem;
 }
-.comment__image {
+.comment__photo {
   width: 3rem;
   height: 3rem;
   border-radius: 2rem;
-  margin-top: 1.4rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
 }
-.comment__name-container {
+.comment__name-box {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #E1E1E1;
+  border-radius: 0.25rem;
 }
-.comment__input-container {
+.comment__input-box {
   display: flex;
   flex-direction: column;
 }
-.comment__input-container--text {
+.comment__input-box--text {
   font-family: "Avenir";
   font-weight: 400;
   color: #AFAFAF;
@@ -573,7 +575,7 @@ footer {
   line-height: 1.25rem;
   margin: 0 0 0.5rem 0;
 }
-.comment__text-container {
+.comment__text-box {
   font-family: "Avenir";
   font-weight: 400;
   font-size: 0.8125rem;
@@ -584,16 +586,16 @@ footer {
   border-color: #AFAFAF;
   resize: none;
 }
-.comment__text-container:focus {
-  border: 2px solid #323232;
+.comment__text-box:focus {
+  border: 1.5px solid #323232;
   outline-width: 0;
 }
-.comment__text-container--one {
+.comment__text-box--one {
   margin: 0 0 0.5rem 0;
   height: 2.5rem;
   padding: 0.625rem;
 }
-.comment__text-container--two {
+.comment__text-box--two {
   padding: 0.625rem 0.625rem 3.125rem 0.625rem;
   margin: 0 0 0.5rem 0;
   height: 5rem;
@@ -622,7 +624,7 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-.comment__header--image-one {
+.comment__header--photo-one {
   height: 3rem;
   width: 3rem;
   background-color: #E1E1E1;
@@ -649,10 +651,10 @@ footer {
   margin: 0;
   padding: 1.75rem 0 0 0;
 }
-.comment__text-container-default {
+.comment__text-box-main {
   display: flex;
 }
-.comment__text-container-default--comment {
+.comment__text-box-main--comment {
   word-wrap: break-word;
   width: 96%;
   color: #323232;
@@ -666,28 +668,21 @@ footer {
 /* mobile-styling-end */
 /* tablet-styling-start */
 @media (min-width: 768px) {
-  .comment {
-    background-color: #FFFFFF;
-    margin: 0 1.5rem 0 1.5rem;
-  }
   .comment__title {
-    font-family: "Avenir";
-    font-weight: 700;
-    font-size: 2.25rem;
-    margin: 3rem 0 3.5rem;
+    font-size: 2.35rem;
+    line-height: 2.75rem;
+    margin: 3rem 0 3.5rem 0;
   }
-  .comment__image {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 2rem;
-    margin: 1.4rem 1.25rem 0 0;
+  .comment__photo {
+    width: 3.437rem;
+    margin: 0rem;
   }
-  .comment__name-container {
+  .comment__name-box {
     display: flex;
     justify-content: center;
     border: none;
   }
-  .comment__border-container {
+  .comment__border-box {
     display: flex;
     justify-content: center;
   }
@@ -695,11 +690,11 @@ footer {
     width: 33rem;
     border: 1px solid #E1E1E1;
   }
-  .comment__input-container {
+  .comment__input-box {
     display: flex;
     flex-direction: column;
   }
-  .comment__input-container--text {
+  .comment__input-box--text {
     font-family: "Avenir";
     font-weight: 600;
     color: #AFAFAF;
@@ -707,7 +702,7 @@ footer {
     line-height: 1.25rem;
     margin: 0 0 0.5rem 0;
   }
-  .comment__text-container {
+  .comment__text-box {
     font-family: "Avenir";
     font-weight: 400;
     font-size: 1rem;
@@ -718,16 +713,16 @@ footer {
     border-color: #AFAFAF;
     resize: none;
   }
-  .comment__text-container:focus {
+  .comment__text-box:focus {
     border: 1px solid #323232;
     outline-width: 0;
   }
-  .comment__text-container--one {
+  .comment__text-box--one {
     margin: 0 0 1.5rem 0;
     height: 3rem;
     padding: 0.625rem 1rem 0 1rem;
   }
-  .comment__text-container--two {
+  .comment__text-box--two {
     padding: 0.625rem 1rem 0 1rem;
     height: 6rem;
     margin: 0 0 1.5rem 0;
@@ -751,7 +746,7 @@ footer {
   .comment__button:hover {
     background-color: #000000;
   }
-  .comment__default-comment {
+  .comment__section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -764,7 +759,7 @@ footer {
     display: flex;
     justify-content: flex-start;
   }
-  .comment__header--image-one {
+  .comment__header--photo-one {
     position: absolute;
     height: 3rem;
     width: 3rem;
@@ -779,30 +774,23 @@ footer {
     font-family: "Avenir";
     font-weight: 600;
     font-size: 1rem;
-    padding: 1.75rem 1rem 0 3.9375rem;
-    margin: 0;
+    margin-left: 3.5rem;
   }
   .comment__header--date {
     color: #AFAFAF;
     font-family: "Avenir";
     font-weight: 400;
     font-size: 1rem;
-    margin: 0;
-    padding: 1.75rem 0 0 0;
+    margin-left: 13rem;
   }
-  .comment__text-container-default {
+  .comment__text-box-main {
     display: flex;
     justify-content: flex-end;
     border-bottom: 1px solid #E1E1E1;
   }
-  .comment__text-container-default--comment {
+  .comment__text-box-main--comment {
     color: #323232;
-    width: 29rem;
-    font-size: 0.875rem;
-    font-family: "Avenir";
-    font-weight: 400;
-    margin: 0;
-    padding: 1rem 0 1.5rem 0;
+    width: 25rem;
   }
 }
 /* tablet-styling-end */
@@ -810,79 +798,12 @@ footer {
 @media (min-width: 1280px) {
   .comment {
     background-color: #FFFFFF;
-    margin: 0 11.25rem 0 11.25rem;
+    margin: 0 10.5rem 0 10.5rem;
   }
   .comment__title {
-    font-family: "Avenir";
-    font-weight: 700;
-    font-size: 2.25rem;
-    margin: 3rem 0 3.5rem;
+    padding-left: 10.25rem;
   }
-  .comment__image {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 2rem;
-    margin: 1.4rem 1.25rem 0 0;
+  .comment__photo {
+    width: 2.9rem;
   }
-  .comment__name-container {
-    display: flex;
-    justify-content: center;
-  }
-  .comment__input-container {
-    display: flex;
-    flex-direction: column;
-  }
-  .comment__input-container--text {
-    font-family: "Avenir";
-    font-weight: 600;
-    color: #AFAFAF;
-    font-size: 0.75rem;
-    line-height: 1.25rem;
-    margin: 0 0 0.5rem 0;
-  }
-  .comment__text-container {
-    font-family: "Avenir";
-    font-weight: 400;
-    font-size: 0.8125rem;
-    border: 1px solid #323232;
-    border-radius: 0.25rem;
-    width: 28.75rem;
-    background-color: #FAFAFA;
-    border-color: #AFAFAF;
-    resize: none;
-  }
-  .comment__text-container:focus {
-    border: 1px solid #323232;
-    outline-width: 0;
-  }
-  .comment__text-container--one {
-    margin: 0 0 1.5rem 0;
-    height: 3rem;
-    padding: 0.625rem 1rem 0 1rem;
-  }
-  .comment__text-container--two {
-    padding: 0.625rem 1rem 0 1rem;
-    height: 6rem;
-    margin: 0 0 1.5rem 0;
-  }
-  .comment__button {
-    font-family: "Avenir";
-    font-weight: 600;
-    font-size: 1rem;
-    background-color: #323232;
-    border-style: none;
-    height: 3rem;
-    border-radius: 0.25rem;
-    color: #FFFFFF;
-    text-align: center;
-    width: 10rem;
-    margin: 0 0 1.5rem 0;
-    outline-width: 0;
-    padding: 0;
-    align-self: flex-end;
-  }
-  .comment__button:hover {
-    background-color: #000000;
-  }
-}
-/* desktop-styling-end *//*# sourceMappingURL=bio.css.map */
+}/*# sourceMappingURL=bio.css.map */
