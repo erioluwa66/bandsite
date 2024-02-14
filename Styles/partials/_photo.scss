@@ -1,0 +1,83 @@
+@use "./variables" as *;
+@use "./typography" as *;
+@use "./mixins" as *;
+@use "./global" as *;
+
+/* mobile-styling-start */
+.photo {
+    background-color: $alternative-text;
+    padding: 0 1rem;
+
+    &__header {
+        font-family: "Avenir";
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding: 2rem 0 1rem 0;
+    }
+
+    &__pics {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1.5rem;
+
+        &-item {
+            height: 50.625vw;
+            width: 100%;
+            padding: 0.5rem 0;
+        }
+
+    }
+}
+
+/* mobile-styling-ends */
+
+/* tablet-styling-start */
+
+@include tablet {
+    .photo {
+        padding: 0 1.5rem;
+
+        &__header {
+            font-size: 2.25rem;
+            line-height: 2.75rem;
+            padding-bottom: 2rem;
+        }
+
+        &__pics {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+            &-item {
+                height: 16.40625vw;
+                width: calc(33% - 10px);
+                padding: 0 0 1.5rem 0;
+            }
+        }
+    }
+}
+
+/* tablet-styling-ends */
+
+/* desktop-styling-starts */
+@include desktop {
+    .photo {
+        padding: 0 11.25rem;
+
+        &__header {
+            padding: 3rem 0 4rem 0;
+        }
+
+        &__pics {
+            padding-bottom: 1rem;
+
+            &-item {
+                height: 11.7363vw;
+            }
+        }
+    }
+}
+
+/* desktop-styling-ends */
