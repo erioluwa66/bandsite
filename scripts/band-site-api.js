@@ -1,4 +1,4 @@
-import { displayComments } from "./index-page.js";
+
 class bandSiteApi {
     constructor(apiKey) {
          this.apiKey = 'ce0a83d6-f938-4f6d-84da-9d270c0130d7';
@@ -75,7 +75,7 @@ const getShow = async () => {
         console.error("Error getting show data:", error);
     }
 };
-getShow();
+//getShow();
 
 export {bandSiteApi}
 

@@ -1,3 +1,18 @@
+import {bandSiteApi} from "./band-site-api.js";
+const api = new bandSiteApi();
+
+const getShow = async () => {
+    try {
+        const shows = await api.getShows();
+        console.log("Shows:", shows);
+        displayShows(shows);
+    } catch (error) {
+        console.error("Error getting show data:", error);
+    }
+};
+getShow();
+
+
 const arrDates = [
 {
     date: "Mon Sep 09 2024",
@@ -110,4 +125,4 @@ const arrDates = [
     }
 }
 
-displayShows(arrDates);
+//displayShows(arrDates);
