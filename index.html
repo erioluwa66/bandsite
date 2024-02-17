@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Styles/bio.css">
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./Styles/bio.css">  
     <title>BANDSITE</title>
 </head>
 <body>
@@ -74,20 +74,18 @@
                 <img class="photo__pics-item" src="./Assets/Images/Photo-gallery-9.jpg" alt="image 9">
               </div>
     </section>
-    <!--Photo photo Ends-->
-
+<!--Photo photo Ends-->
+<!--comment content starts-->
  <section class="comment">
-        <h1 class="comment__title">Join the Conversation</h1>
+    <h2 class="comment__title">Join the Conversation</h2>
         <div class="comment__name-box">  
             <img class="comment__photo" src="./Assets/Images/Mohan-muruge.jpg" alt="">
                 <form class="comment__input-box">        
-                    <h4 class="comment__input-box--text">NAME</h4>
-                        <textarea class="comment__text-box comment__text-box--one"  name="name" rows="10" cols="50" placeholder="Enter your name">   
-                        </textarea>         
-                    <h4 class="comment__input-box--text">COMMENT</h4>                   
-                        <textarea class="comment__text-box comment__text-box--two" name="comment" rows="10" cols="50" placeholder="Add a new comment">                          
-                        </textarea>              
-                    <button class="comment__button">COMMENT</button>              
+                    <label for="name" class="comment__input-box--text">NAME</label>
+                    <input type="text" id="name" class="comment__text-box comment__text-box--one" placeholder="Enter your name" required>       
+                    <label for="comment" class="comment__input-box--text">COMMENT</label>                   
+                    <textarea class="comment__text-box comment__text-box--two" id="comment" rows="10" cols="50" placeholder="Add a new comment" required> </textarea>                                                          
+                    <button class="comment__button" type="submit">COMMENT</button>              
                 </form>
         </div>  
         <div class="comment__section"></div>
@@ -130,8 +128,7 @@
         <h3 class="footer__copyright">Copyright The Bees Knees © 2023 All Rights Reserved</h3>
     </footer>
     <!--Footer ends-->
-        <script src="./scripts/index-page.js"></script>
-        <script src="./scripts/band-site-api.js"></script>
-       
+    <script src="./scripts/index-page.js" type="module"></script>
+    <script src="./scripts/band-site-api.js" type="module"></script>      
 </body>
 </html>

@@ -1,3 +1,34 @@
+import {bandSiteApi} from "./band-site-api.js";
+const api = new bandSiteApi();
+
+
+const addComment = async () => {
+    const comment = {
+        "name": Mariam,
+        "comment": "God will do it."
+    };
+
+    try {
+        const postedComment = await api.postComment(comment);
+        console.log("Posted Comment:", postedComment);
+    } catch (error) {
+        console.error("Error posting comment:", error);
+    }
+};
+//addComment();
+
+// Getting comments
+const getComment = async () => {
+    try {
+        const comments = await api.getComments();
+        console.log("Comments:", comments);
+        displayComments(comments);
+    } catch (error) {
+        console.error("Error getting comments:", error);
+    }
+};
+getComment();
+
 //Default comments array
 let comments = [
   {
@@ -69,7 +100,7 @@ function displayComments(arr) {
     textContainer.appendChild(comment);
   }
 }
-displayComments(comments);
+
 
 
 const form = document.querySelector(".comment__input-box");
@@ -138,3 +169,5 @@ form.addEventListener("submit", submitEvent => {
   let clearInput = document.querySelector(".comment__input-box");
   clearInput.reset();
 });
+
+export {displayComments}
