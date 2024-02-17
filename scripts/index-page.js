@@ -56,6 +56,11 @@ function displayComments(arr) {
   let commentContainer = document.querySelector(".comment__section");
 
   for (let i = 0; i < arr.length; i++) {
+    //date setting
+    let m = new Date(arr[i]["timestamp"]);
+    let dateString =
+      m.getUTCMonth() + 1 + "/" + m.getUTCDate() + "/" + m.getUTCFullYear();
+
     // default comment div
     let defaultContainer = document.createElement("div");
     defaultContainer.classList.add("comment__default");
@@ -85,7 +90,7 @@ function displayComments(arr) {
     //header date
     let date = document.createElement("h3");
     date.classList.add("comment__header--date");
-    date.innerText = arr[i]["date"];
+    date.innerText = dateString;
     headerContainer.appendChild(date);
 
     //comment box
