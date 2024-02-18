@@ -75,26 +75,39 @@
               </div>
     </section>
 <!--Photo photo Ends-->
-<!--comment content starts-->
- <section class="comment">
-    <h2 class="comment__title">Join the Conversation</h2>
-        <div class="comment__name-box">  
-            <img class="comment__photo" src="./Assets/Images/Mohan-muruge.jpg" alt="">
-                <form class="comment__input-box">        
-                    <label for="name" class="comment__input-box--text">NAME</label>
-                    <input type="text" id="name" class="comment__text-box comment__text-box--one" placeholder="Enter your name" required>       
-                    <label for="comment" class="comment__input-box--text">COMMENT</label>                   
-                    <textarea class="comment__text-box comment__text-box--two" id="comment" rows="10" cols="50" placeholder="Add a new comment" required> </textarea>                                                          
-                    <button class="comment__button" type="submit">COMMENT</button>              
-                </form>
-        </div>  
-        <div class="comment__section"></div>
-    </section>
-
-    <!-- comment-content-end -->
-
-
-    <!--Footer starts-->
+<!--Comments Section Start -->
+<section class="conv__section" >
+    <h2  class="conv__section-title">Join the Conversation</h2>
+<!-- User Input Comment Section -->
+    <div class="conv">
+    <!-- Avatar Container -->
+        <div class="conv__profile">
+        <img src="assets/images/Mohan-muruge.jpg" class="conv__profile-img" alt="user profile">
+        </div>
+<!-- Commenting Form -->
+<form class="conv__form" >
+<!-- Name Container -->
+<div class="conv__name-container">
+    <label class="conv__name-label" for="name">NAME</label>
+    <input class="conv__name-input" type="text" name="name" id="name" placeholder="Enter your name">
+</div>
+<!-- Comment Section -->
+<div class="conv__comment-container">
+    <label class="conv__comment-label" for="comment">COMMENT</label>
+    <input class="conv__comment-input" type="text" name="comment" id="comment" placeholder="Add a new comment">
+</div>
+<!-- Submit button -->
+<div class="conv__btn-cont">
+    <button type="submit" class="conv__btn">COMMENT</button>
+</div>
+</form>
+</div>
+</section>
+<!-- Comments Section End -->
+<div class="comments">          
+<!-- JS Script Injection  -->
+</div>
+<!--Footer starts-->
     <footer class="footer">
         <div class="footer__main">
             <h2 class="footer__tittle"> Get in Touch </h2>
