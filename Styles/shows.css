@@ -417,11 +417,12 @@ footer {
   border-radius: 0.315rem;
   font-size: 0.815rem;
 }
-.shows__button:focus {
-  outline-width: 0;
+.shows__button:active {
+  cursor: pointer;
 }
 .shows__button:hover {
-  background-color: #FAFAFA;
+  background-color: #000000;
+  cursor: pointer;
   box-shadow: 0.125rem 0.125rem 1.25rem;
 }
 
@@ -457,9 +458,17 @@ footer {
     width: 10rem;
   }
   .shows__new {
+    border-bottom: 0.0313rem solid #E1E1E1;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+  .shows__new:hover {
+    background-color: #FAFAFA;
+    cursor: pointer;
+  }
+  .shows__new:active {
+    background-color: #FAFAFA;
   }
   .shows__date, .shows__venue, .shows__location {
     display: none;
@@ -485,6 +494,7 @@ footer {
     width: 50.25rem;
   }
   .shows__new {
+    border-bottom: 1px solid #E1E1E1;
     padding: 1rem 0;
   }
   .shows__subtitle {
