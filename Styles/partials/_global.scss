@@ -110,7 +110,7 @@ footer{
             border-bottom: 0.2125rem solid transparent; 
             #active {
                 color: $primary-text-light;
-                border-bottom: 0.3.125rem solid $primary-text-light;
+                border-bottom: .25rem $primary-text-light solid;
             }
         }
         &--link {
@@ -119,7 +119,7 @@ footer{
             margin-top: 1.32rem;
             color: $secondary-text;
             &:hover {
-                border-bottom: .3125rem solid $primary-text-light;
+                border-bottom: .25rem $primary-text-light solid;
             }
         }
     }
@@ -197,6 +197,7 @@ footer{
     font-weight: 400;
     font-size: 0.8125rem;
     line-height: 1.125rem;
+
     &__title {
         font-family: "Avenir";
         font-weight: 700;
@@ -204,30 +205,38 @@ footer{
         line-height: 2rem;
         padding: 2rem 0 1.5rem 0;
     }
+
     &__icon {
         padding-bottom: 2rem;
+
         &-link {
+            height: 2rem;
             margin-right: 1.6rem;
         }
     }
+
     &__logo {
         display: none;
     }
+
     &__contact {
         &--details__name {
             font-size: 0.875rem;
             line-height: 1.375rem;
             padding-bottom: 1.25rem;
         }
+
         &--details__address,
         &--details__email {
-            color: $secondary-text;
+            color: $primary-text-light;
+            font-size: 0.875rem;
             text-decoration: none;
             margin-bottom: 1.25rem;
         }
     }
+
     &__copyright {
-        color: $secondary-text;
+        color: $primary-text-light;
         padding-bottom: 2rem;
     }
 }
@@ -237,42 +246,51 @@ footer{
         padding: 0 1.5rem;
         font-size: 0.875rem;
         line-height: 1.25rem;
+
         &__main {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
+
         &__tittle {
             font-size: 2.25rem;
             line-height: 2.75rem;
             padding: 3rem 0 3.5rem 0;
         }
+
         &__icon {
-            padding: 0 8rem 0 0;
+            padding: 0 6rem 0 0;
             position: relative;
 
             &-link {
                 margin-right: 2rem;
             }
         }
+
         &__logo {
             display: inherit;
             height: 1.5rem;
             width: 7.5rem;
         }
+
         &__contact-box {
             display: flex;
             justify-content: space-between;
         }
+
         &__contact--details {
             &__name {
                 font-size: 1rem;
                 line-height: 1.5rem;
                 padding-bottom: 1.5rem;
             }
+
             &__address {
+                line-height: 1.5rem;
                 padding-bottom: 0.25rem;
             }
+
             &__email {
                 margin-bottom: 2.5rem;
             }
@@ -284,8 +302,9 @@ footer{
 @include desktop {
     .footer {
         padding: 0 11.25rem;
+
         &__icon {
-            padding-right: 30rem;
+            padding-left: 27rem;
         }
     }
 }

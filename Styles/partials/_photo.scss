@@ -11,20 +11,22 @@
     &__header {
         font-family: "Avenir";
         font-weight: 700;
-        font-size: 1.5rem;
-        line-height: 2rem;
         padding: 2rem 0 1rem 0;
     }
 
     &__pics {
         display: flex;
         flex-direction: column;
-        padding-bottom: 1.5rem;
+        padding-bottom: 2rem;
 
         &-item {
             height: 50.625vw;
             width: 100%;
-            padding: 0.5rem 0;
+            margin: 0.5rem 0;
+            filter: grayscale(1);
+        }
+        &-item:hover {
+            filter: none;
         }
 
     }

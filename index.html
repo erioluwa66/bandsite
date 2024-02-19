@@ -1,147 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="./Styles/bio.css">  
-    <title>BANDSITE</title>
-</head>
-<body>
-<!--nav content starts-->
-<header class="header">
-    <div class="header__navbar">
-        <a href="./index.html" class="header__navbar-logo">
-            <img class="header__navbar-image" src="./assets/logo/Logo-bandsite.png" alt="logo">
-        </a>  
+    <link rel="stylesheet" href="./Styles/bio.css" />
+    <title>Biography</title>
+  </head>
+  <body>
+    <!--nav content starts-->
+    <header class="header">
+      <div class="header__navbar">
+        <a href="./index.html" class="header__navbar-logo"> <img class="header__navbar-image" src="./assets/logo/Logo-bandsite.png" alt="logo"/> </a>
         <ul class="header__nav-list">
-            <li class="header__nav-list--item">
-                <a class="header__nav-list--link" id="active" href="./index.html">Biography</a>
-            </li>                    
-           <li class="header__nav-list--item">
-                <a class="header__nav-list--link" href="./pages/shows.html">Shows</a>
-            </li>           
+          <li class="header__nav-list--item">
+            <a class="header__nav-list--link" id="active" href="./index.html"
+              >Biography</a>
+          </li>
+          <li class="header__nav-list--item">
+            <a class="header__nav-list--link" href="./pages/shows.html">Shows</a>
+          </li>
         </ul>
-    </div>
-</header>  
-<!--nav content ends-->
-<!-- Hero Section Starts-->
+      </div>
+    </header>
+    <!--nav content ends-->
+    <!-- Hero Section Starts-->
     <section class="hero">
-        <div class="hero__container">
-            <h1 class="hero__tittle">The Bees Knees</h1> 
-        </div>
+      <div class="hero__container">
+        <h1 class="hero__tittle">The Bees Knees</h1>
+      </div>
     </section>
     <!-- Hero Section Ends-->
 
     <!--About the Musicians starts-->
-    <article class="about">   
-        <h2 class="about__tittle">About the Musicians</h2>
-        <div class="about__image-box">
-            <img class="about__image" src="./Assets/Images/band.jpg" alt="band in concert">
-        </div>
-        <h3 class="about__quote">“We push each other to be the best. It’s not uncommon for one of us to say ‘this needs to be better, back to the drawing
-            board'”</h3>
-        <h3 class="about__quote-author"> - Lead vocalist of The Bees Knees</h3> 
-        <h3 class="about__main">The Bees Knees</h3>
-        <div class="about__story-box">
-            <h4 class="about__story-one">The Bees Knees is a pop rock band originating from San Francisco, California. The band consists a dynamic lineup
-                featuring two lead vocalists, two guitarists, a bassist, a keyboardist and a drummer. The band achieved its first
-                commercial success as an unsigned act, drawing attention from their future manager. Having extensive experience working
-                with both new and seasoned acts, the manager was confident the band could succeed even further with more support,
-                pushing The Bees Knees to sign with a well known record label.</h3>
-            
-            <h4 class="about__story-two">From there, the band has soared, gaining international recognition and ranking in the top 10 on the Poster Charts. New
-                fans immediately fell in love with the band’s original and organic attitude, solidifying their place as one of the
-                hottest and fastest up and coming acts of this century. Fans affectionately refer to themselves as “The Hive” and are
-                drawn to their candid and authentic performances on stage. The Bees Knees are currently recording their second studio
-                album, looking to be released in early 2024.</h3>
-        </div> 
+    <article class="about">
+      <h2 class="about__tittle">About the Musicians</h2>
+      <div class="about__image-box">
+        <img class="about__image" src="./Assets/Images/band.jpg" alt="band in concert"/></div>
+      <h3 class="about__quote">
+        “We push each other to be the best. It’s not uncommon for one of us to
+        say ‘this needs to be better, back to the drawing board'”
+      </h3>
+      <h3 class="about__quote-author">- Lead vocalist of The Bees Knees</h3>
+      <h3 class="about__main">The Bees Knees</h3>
+      <div class="about__story-box">
+        <h3 class="about__story-one">
+          The Bees Knees is a pop rock band originating from San Francisco,
+          California. The band consists a dynamic lineup featuring two lead
+          vocalists, two guitarists, a bassist, a keyboardist and a drummer. The
+          band achieved its first commercial success as an unsigned act, drawing
+          attention from their future manager. Having extensive experience
+          working with both new and seasoned acts, the manager was confident the
+          band could succeed even further with more support, pushing The Bees
+          Knees to sign with a well known record label.
+        </h3>
+
+        <h3 class="about__story-two">
+          From there, the band has soared, gaining international recognition and
+          ranking in the top 10 on the Poster Charts. New fans immediately fell
+          in love with the band’s original and organic attitude, solidifying
+          their place as one of the hottest and fastest up and coming acts of
+          this century. Fans affectionately refer to themselves as “The Hive”
+          and are drawn to their candid and authentic performances on stage. The
+          Bees Knees are currently recording their second studio album, looking
+          to be released in early 2024.
+        </h3>
+      </div>
     </article>
     <!--About the Musicians ends-->
 
     <!--Photo photo Starts-->
     <section class="photo">
-            <h2 class="photo__header">Photo</h2>
-            <div class="photo__pics">
-                <img class="photo__pics-item" src="./Assets/Images/Photo-gallery-1.jpg" alt="image 1">
-                <img class="photo__pics-item" src="./Assets/Images/Photo-gallery-2.jpg" alt="image 2">
-                <img class="photo__pics-item" src="./Assets/Images/Photo-gallery-3.jpg" alt="image 3">
-                <img class="photo__pics-item" src="./Assets/Images/Photo-gallery-4.jpg" alt="image 4">
-                <img class="photo__pics-item" src="./Assets/Images/Photo-gallery-5.jpg" alt="image 5">
-                <img class="photo__pics-item" src="./Assets/Images/Photo-gallery-6.jpg" alt="image 6">
-                <img class="photo__pics-item" src="./Assets/Images/Photo-gallery-7.jpg" alt="image 7">
-                <img class="photo__pics-item" src="./Assets/Images/Photo-gallery-8.jpg" alt="image 8">
-                <img class="photo__pics-item" src="./Assets/Images/Photo-gallery-9.jpg" alt="image 9">
-              </div>
+      <h2 class="photo__header">Photo Gallery</h2>
+      <div class="photo__pics">
+        <img
+          class="photo__pics-item"
+          src="./Assets/Images/Photo-gallery-1.jpg"
+          alt="image 1"
+        />
+        <img
+          class="photo__pics-item"
+          src="./Assets/Images/Photo-gallery-2.jpg"
+          alt="image 2"
+        />
+        <img
+          class="photo__pics-item"
+          src="./Assets/Images/Photo-gallery-3.jpg"
+          alt="image 3"
+        />
+        <img
+          class="photo__pics-item"
+          src="./Assets/Images/Photo-gallery-4.jpg"
+          alt="image 4"
+        />
+        <img
+          class="photo__pics-item"
+          src="./Assets/Images/Photo-gallery-5.jpg"
+          alt="image 5"
+        />
+        <img
+          class="photo__pics-item"
+          src="./Assets/Images/Photo-gallery-6.jpg"
+          alt="image 6"
+        />
+        <img
+          class="photo__pics-item"
+          src="./Assets/Images/Photo-gallery-7.jpg"
+          alt="image 7"
+        />
+        <img
+          class="photo__pics-item"
+          src="./Assets/Images/Photo-gallery-8.jpg"
+          alt="image 8"
+        />
+        <img
+          class="photo__pics-item"
+          src="./Assets/Images/Photo-gallery-9.jpg"
+          alt="image 9"
+        />
+      </div>
     </section>
-<!--Photo photo Ends-->
-<!--Comments Section Start -->
-<section class="conv__section" >
-    <h2  class="conv__section-title">Join the Conversation</h2>
-<!-- User Input Comment Section -->
-    <div class="conv">
-    <!-- Avatar Container -->
-        <div class="conv__profile">
-        <img src="assets/images/Mohan-muruge.jpg" class="conv__profile-img" alt="user profile">
-        </div>
-<!-- Commenting Form -->
-<form class="conv__form" >
-<!-- Name Container -->
-<div class="conv__name-container">
-    <label class="conv__name-label" for="name">NAME</label>
-    <input class="conv__name-input" type="text" name="name" id="name" placeholder="Enter your name">
-</div>
-<!-- Comment Section -->
-<div class="conv__comment-container">
-    <label class="conv__comment-label" for="comment">COMMENT</label>
-    <input class="conv__comment-input" type="text" name="comment" id="comment" placeholder="Add a new comment">
-</div>
-<!-- Submit button -->
-<div class="conv__btn-cont">
-    <button type="submit" class="conv__btn">COMMENT</button>
-</div>
-</form>
-</div>
-</section>
-<!-- Comments Section End -->
-<div class="comments">          
-<!-- JS Script Injection  -->
-</div>
-<!--Footer starts-->
+    <!--Photo photo Ends-->
+  <!--conversation Section -->
+  <section class="conversation__section" >
+    <h2  class="conversation__section-title">Join the conversation</h2>
+    <!-- User Input Section -->
+    <div class="conversation">
+    <!-- pics Container -->
+    <div class="conversation__profile">
+        <img src="assets/images/Mohan-muruge.jpg" class="conversation__profile-img" alt="user profile">
+    </div>
+    <!-- Comment Form -->
+    <form class="conversation__form" >
+    <!-- Name Container -->
+    <div class="conversation__name-container">
+        <label class="conversation__name-label" for="name">NAME</label>
+        <input class="conversation__name-input" type="text" name="name" id="name" placeholder="Enter your name">
+    </div>
+    <!-- Comment Section -->
+    <div class="conversation__comment-container">
+        <label class="conversation__comment-label" for="comment">COMMENT</label>
+        <input class="conversation__comment-input" type="text" name="comment" id="comment" placeholder="Add a new comment">
+    </div>
+    <!-- Submit button -->
+    <div class="conversation__btn-cont">
+            <button type="submit" class="conversation__btn">COMMENT</button>
+    </div>
+    </form>
+    </div>
+    </section>
+    <!-- Comments Section -->
+    <div class="comments">          
+        <!-- JS Script Injection  -->
+    </div>
+    <!--Footer starts-->
     <footer class="footer">
-        <div class="footer__main">
-            <h2 class="footer__tittle"> Get in Touch </h2>
-
-            <div class="footer__icon">
-                <a href="www.instagram.com"><img src="./Assets/Icons/SVG/Icon-instagram.svg" alt="instagram"></a>
-                <a href="www.facebook.com"><img src="./Assets/Icons/SVG/Icon-facebook.svg" alt="facebook"></a>
-                <a href="www.twitter.com"><img src="./Assets/Icons/SVG/Icon-twitter.svg" alt="twitter"></a>
-            </div>
-            <a href="./index.html"><img class="footer__logo" src="./Assets/Logo/Logo-bandsite.png" alt="Bandsite Logo"></a>
+      <div class="footer__main">
+        <h2 class="footer__tittle">Get in Touch</h2>
+        <div class="footer__icon">
+          <a href="www.instagram.com"
+            ><img class="footer__icon-link"  src="./Assets/Icons/SVG/Icon-instagram.svg" alt="instagram"
+          /></a>
+          <a href="www.facebook.com"
+            ><img class="footer__icon-link"  src="./Assets/Icons/SVG/Icon-facebook.svg" alt="facebook"
+          /></a>
+          <a href="www.twitter.com"
+            ><img class="footer__icon-link"  src="./Assets/Icons/SVG/Icon-twitter.svg" alt="twitter"
+          /></a>
         </div>
-        <section class="footer__contact-box">
-            <div class="footer__contact--details">
-                <h3 class="footer__contact--details__name">The Bees Knees Management</h3> 
-                <h3 class="footer__contact--details__address">503 Broadway Penthouse,<br>New York, NY 10012, USA</h3>
-                <a class="footer__contact--details__email" href="mailto:info@thebeesknees.com">info@thebeesknees.com</a>
-            </div>
-         
-            <div class="footer__contact--details">
-                <h3 class="footer__contact--details__name">Limitless Artist Group</h3> 
-                <h3 class="footer__contact--details__address">Booking Agent for<br>US / South America / Japan</h3>
-                <a class="footer__contact--details__email" href="mailto:bookings@limitlessag.com">bookings@limitlessag.com</a>
-            </div>
-
-            <div class="footer__contact--details">
-                <h3 class="footer__contact--details__name">ARCH Entertainment</h3> 
-                <h3 class="footer__contact--details__address">Booking Agent for<br>UK / EU / AU</h3>
-                <a class="footer__contact--details__email" href="mailto:bookings@archentertainment.com">bookings@archentertainment.com</a>
-            </div>
-        </section>
-        <h3 class="footer__copyright">Copyright The Bees Knees © 2023 All Rights Reserved</h3>
+        <a href="./index.html"
+          ><img
+            class="footer__logo"
+            src="./Assets/Logo/Logo-bandsite.png"
+            alt="Bandsite Logo"
+        /></a>
+      </div>
+      <section class="footer__contact-box">
+        <div class="footer__contact--details">
+          <h3 class="footer__contact--details__name">
+            The Bees Knees Management
+          </h3>
+          <h3 class="footer__contact--details__address">
+            503 Broadway Penthouse,<br />New York, NY 10012, USA
+          </h3>
+          <a
+            class="footer__contact--details__email"
+            href="mailto:info@thebeesknees.com"
+            >info@thebeesknees.com</a
+          >
+        </div>
+        <div class="footer__contact--details">
+          <h3 class="footer__contact--details__name">Limitless Artist Group</h3>
+          <h3 class="footer__contact--details__address">
+            Booking Agent for<br />US / South America / Japan
+          </h3>
+          <a
+            class="footer__contact--details__email"
+            href="mailto:bookings@limitlessag.com"
+            >bookings@limitlessag.com</a
+          >
+        </div>
+        <div class="footer__contact--details">
+          <h3 class="footer__contact--details__name">ARCH Entertainment</h3>
+          <h3 class="footer__contact--details__address">
+            Booking Agent for<br />UK / EU / AU
+          </h3>
+          <a
+            class="footer__contact--details__email"
+            href="mailto:bookings@archentertainment.com"
+            >bookings@archentertainment.com</a
+          >
+        </div>
+      </section>
+      <h3 class="footer__copyright">
+        Copyright The Bees Knees © 2023 All Rights Reserved
+      </h3>
     </footer>
     <!--Footer ends-->
     <script src="./scripts/index-page.js" type="module"></script>
-    <script src="./scripts/band-site-api.js" type="module"></script>      
-</body>
+    <script src="./scripts/band-site-api.js" type="module"></script>
+  </body>
 </html>

@@ -131,7 +131,7 @@ footer {
 }
 .header__nav-list--item #active {
   color: #FFFFFF;
-  border-bottom: 0.3 0.125rem solid #FFFFFF;
+  border-bottom: 0.25rem #FFFFFF solid;
 }
 .header__nav-list--link {
   text-decoration: none;
@@ -140,7 +140,7 @@ footer {
   color: #AFAFAF;
 }
 .header__nav-list--link:hover {
-  border-bottom: 0.3125rem solid #FFFFFF;
+  border-bottom: 0.25rem #FFFFFF solid;
 }
 
 @media (min-width: 768px) {
@@ -209,6 +209,7 @@ footer {
   padding-bottom: 2rem;
 }
 .footer__icon-link {
+  height: 2rem;
   margin-right: 1.6rem;
 }
 .footer__logo {
@@ -220,12 +221,13 @@ footer {
   padding-bottom: 1.25rem;
 }
 .footer__contact--details__address, .footer__contact--details__email {
-  color: #AFAFAF;
+  color: #FFFFFF;
+  font-size: 0.875rem;
   text-decoration: none;
   margin-bottom: 1.25rem;
 }
 .footer__copyright {
-  color: #AFAFAF;
+  color: #FFFFFF;
   padding-bottom: 2rem;
 }
 
@@ -246,7 +248,7 @@ footer {
     padding: 3rem 0 3.5rem 0;
   }
   .footer__icon {
-    padding: 0 8rem 0 0;
+    padding: 0 6rem 0 0;
     position: relative;
   }
   .footer__icon-link {
@@ -267,6 +269,7 @@ footer {
     padding-bottom: 1.5rem;
   }
   .footer__contact--details__address {
+    line-height: 1.5rem;
     padding-bottom: 0.25rem;
   }
   .footer__contact--details__email {
@@ -278,7 +281,7 @@ footer {
     padding: 0 11.25rem;
   }
   .footer__icon {
-    padding-right: 30rem;
+    padding-left: 27rem;
   }
 }
 .hero {
@@ -325,52 +328,52 @@ footer {
     padding-left: 11rem;
   }
 }
-.conv {
+.conversation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.conv__section-title {
+.conversation__section-title {
   font-size: 2rem;
   font-weight: 600;
   margin: 0rem 0rem 2rem 0rem;
 }
 @media (min-width: 768px) {
-  .conv__section-title {
+  .conversation__section-title {
     font-size: 2.25rem;
     margin: 1rem 0rem 2rem 0rem;
   }
 }
 @media (min-width: 1280px) {
-  .conv__section-title {
+  .conversation__section-title {
     margin: 3rem 0rem 2rem 0rem;
   }
 }
-.conv__form {
+.conversation__form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 85%;
 }
-.conv__name-container {
+.conversation__name-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.conv__email-container {
+.conversation__email-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.conv__name-label {
+.conversation__name-label {
   color: #AFAFAF;
   margin-bottom: 1rem;
 }
-.conv__comment-label {
+.conversation__comment-label {
   color: #AFAFAF;
   margin-bottom: 1rem;
 }
-.conv__name-input {
+.conversation__name-input {
   font-size: 1rem;
   width: 100%;
   background-color: #FFFFFF;
@@ -380,11 +383,11 @@ footer {
   padding-left: 1rem;
   margin-bottom: 2rem;
 }
-.conv__name-input:focus {
+.conversation__name-input:focus {
   outline: none;
   border: 2px solid #FAFAFA;
 }
-.conv__comment-input {
+.conversation__comment-input {
   background-color: #FFFFFF;
   font-size: 1rem;
   width: 100%;
@@ -395,56 +398,56 @@ footer {
   padding-left: 1rem;
   margin: 1rem 0rem;
 }
-.conv__comment-input:focus {
+.conversation__comment-input:focus {
   outline: none;
   border: 2px solid #323232;
 }
-.conv__btn {
+.conversation__btn {
   width: 100%;
   height: 4.6rem;
   background-color: #323232;
-  color: #FFF;
+  color: #FFFFFF;
   font-size: 1rem;
   letter-spacing: 0.1rem;
   border-radius: 5px;
   border: none;
   margin-bottom: 1.5rem;
 }
-.conv__btn:hover {
+.conversation__btn:hover {
   background-color: #000000;
   cursor: pointer;
 }
-.conv__btn :active {
+.conversation__btn :active {
   cursor: pointer;
 }
 @media (min-width: 768px) {
-  .conv__btn {
+  .conversation__btn {
     width: 33%;
     height: 3.2rem;
     padding: 0 1rem;
   }
 }
 @media (min-width: 1280px) {
-  .conv__btn {
+  .conversation__btn {
     width: 44%;
   }
 }
-.conv__btn-cont {
+.conversation__btn-cont {
   display: flex;
 }
 @media (min-width: 768px) {
-  .conv__btn-cont {
+  .conversation__btn-cont {
     height: 3.6rem;
     width: 100%;
     justify-content: flex-end;
   }
 }
-.conv__profile {
+.conversation__profile {
   display: flex;
   width: 13%;
   justify-content: flex-end;
 }
-.conv__profile-img {
+.conversation__profile-img {
   margin-top: 1.3rem;
   margin-right: 1rem;
   width: 2.75em;
@@ -454,20 +457,20 @@ footer {
   border-radius: 1.3rem;
 }
 @media (min-width: 768px) {
-  .conv__profile-img {
+  .conversation__profile-img {
     margin-right: 1.4rem;
   }
 }
 @media (min-width: 1280px) {
-  .conv__profile-img {
+  .conversation__profile-img {
     margin-right: 1.2rem;
   }
 }
-.conv__section {
+.conversation__section {
   padding: 2.4rem 1.6rem 0rem 1.6rem;
 }
 @media (min-width: 1280px) {
-  .conv__section {
+  .conversation__section {
     display: flex;
     max-width: 63.75rem;
     flex-direction: column;
@@ -477,7 +480,7 @@ footer {
   }
 }
 @media (min-width: 768px) {
-  .conv {
+  .conversation {
     max-width: 63.75;
     display: flex;
     justify-content: center;
@@ -487,7 +490,7 @@ footer {
   }
 }
 @media (min-width: 1280px) {
-  .conv {
+  .conversation {
     max-width: 63.75;
     width: 50%;
   }
@@ -505,12 +508,12 @@ footer {
   flex-direction: row;
   justify-content: space-between;
 }
-.comments__avatar-cont {
+.comments__pics-cont {
   justify-content: flex-end;
   border-radius: 1.3rem;
   width: 2.75rem;
   height: 2.75rem;
-  background-color: #FFFFFF;
+  background-color: #AFAFAF;
   margin-right: 1.18rem;
 }
 .comments__comment-cont {
@@ -535,10 +538,10 @@ footer {
     width: 61%;
   }
 }
-.comments__comment-cont--fnode {
+.comments__comment-cont--first {
   border-top: 1px solid #E1E1E1;
 }
-.comments__comment-cont--lnode {
+.comments__comment-cont--last {
   border-bottom: 1px solid #E1E1E1;
 }
 .comments__name {
@@ -591,19 +594,21 @@ footer {
 .photo__header {
   font-family: "Avenir";
   font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 2rem;
   padding: 2rem 0 1rem 0;
 }
 .photo__pics {
   display: flex;
   flex-direction: column;
-  padding-bottom: 1.5rem;
+  padding-bottom: 2rem;
 }
 .photo__pics-item {
   height: 50.625vw;
   width: 100%;
-  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+  filter: grayscale(1);
+}
+.photo__pics-item:hover {
+  filter: none;
 }
 
 /* mobile-styling-ends */

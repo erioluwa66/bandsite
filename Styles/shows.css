@@ -131,7 +131,7 @@ footer {
 }
 .header__nav-list--item #active {
   color: #FFFFFF;
-  border-bottom: 0.3 0.125rem solid #FFFFFF;
+  border-bottom: 0.25rem #FFFFFF solid;
 }
 .header__nav-list--link {
   text-decoration: none;
@@ -140,7 +140,7 @@ footer {
   color: #AFAFAF;
 }
 .header__nav-list--link:hover {
-  border-bottom: 0.3125rem solid #FFFFFF;
+  border-bottom: 0.25rem #FFFFFF solid;
 }
 
 @media (min-width: 768px) {
@@ -209,6 +209,7 @@ footer {
   padding-bottom: 2rem;
 }
 .footer__icon-link {
+  height: 2rem;
   margin-right: 1.6rem;
 }
 .footer__logo {
@@ -220,12 +221,13 @@ footer {
   padding-bottom: 1.25rem;
 }
 .footer__contact--details__address, .footer__contact--details__email {
-  color: #AFAFAF;
+  color: #FFFFFF;
+  font-size: 0.875rem;
   text-decoration: none;
   margin-bottom: 1.25rem;
 }
 .footer__copyright {
-  color: #AFAFAF;
+  color: #FFFFFF;
   padding-bottom: 2rem;
 }
 
@@ -246,7 +248,7 @@ footer {
     padding: 3rem 0 3.5rem 0;
   }
   .footer__icon {
-    padding: 0 8rem 0 0;
+    padding: 0 6rem 0 0;
     position: relative;
   }
   .footer__icon-link {
@@ -267,6 +269,7 @@ footer {
     padding-bottom: 1.5rem;
   }
   .footer__contact--details__address {
+    line-height: 1.5rem;
     padding-bottom: 0.25rem;
   }
   .footer__contact--details__email {
@@ -278,7 +281,7 @@ footer {
     padding: 0 11.25rem;
   }
   .footer__icon {
-    padding-right: 30rem;
+    padding-left: 27rem;
   }
 }
 .hero {

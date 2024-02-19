@@ -1,7 +1,7 @@
-import {bandSiteApi} from "./band-site-api.js";
+import { bandSiteApi } from "./band-site-api.js";
 const api = new bandSiteApi();
 
-const getShow = async () => {
+const getAndDisplayShows = async () => {
     try {
         const shows = await api.getShows();
         console.log("Shows:", shows);
@@ -10,43 +10,9 @@ const getShow = async () => {
         console.error("Error getting show data:", error);
     }
 };
-getShow();
+getAndDisplayShows();
 
-
-const arrDates = [
-{
-    date: "Mon Sep 09 2024",
-    venue: "Ronald Lane",
-    location: "San Francisco, CA"    
-}, 
-{
-    date: "Tue Sep 17 2024",
-    venue: "Pier 3 East",
-    location: "San Francisco, CA" 
-}, 
-{
-    date: "Sat Oct 12 2024",
-    venue: "View Lounge",
-    location: "San Francisco, CA" 
-}, 
-{
-    date: "Sat Nov 16 2024",
-    venue: "Hyatt Agency",
-    location: "San Francisco, CA" 
-}, 
-{
-    date: "Fri Nov 29 2024",
-    venue: "Moscow Center",
-    location: "San Francisco, CA" 
-}, 
-{
-    date: "Wed Dec 18 2024",
-    venue: "Press Club",
-    location: "San Francisco, CA" 
-}
-];
-
-   function displayShows(arr) {
+function displayShows(arr) {
     const shows = document.querySelector(".shows")
 
     const showsTitle = document.createElement("h2");
@@ -83,7 +49,7 @@ const arrDates = [
     infoDiv.appendChild(hiddenElement);
 
 
-    for(let key in arrDates) {    
+    for(let key in arr) {    
         const showsParent = document.createElement("div");
         showsParent.classList.add("shows__new");
         showsContainer.appendChild(showsParent);
@@ -95,7 +61,11 @@ const arrDates = [
        
         const dateShow = document.createElement("h3");
         dateShow.classList.add("shows__date-actual");
-        dateShow.innerText = arrDates[key]["date"];
+        // Format the date to "dd/mm/year" format
+        const dateObj = new Date(arr[key].date);
+        const options = { weekday: 'short', month: 'short', day: '2-digit', year: 'numeric' };
+        const formattedDate = dateObj.toLocaleDateString('en-US', options);
+        dateShow.innerText = formattedDate;
         showsParent.appendChild(dateShow);
      
         const venueTitle = document.createElement("h4");
@@ -105,7 +75,8 @@ const arrDates = [
        
         const venueShow = document.createElement("h3");
         venueShow.classList.add("shows__venue-actual");
-        venueShow.innerText = arrDates[key]["venue"];
+        // Use "place" property instead of "venue"
+        venueShow.innerText = arr[key].place;
         showsParent.appendChild(venueShow);
      
         const locationTitle = document.createElement("h4");
@@ -115,7 +86,7 @@ const arrDates = [
 
         const locationShow = document.createElement("h3");
         locationShow.classList.add("shows__location-actual");
-        locationShow.innerText = arrDates[key]["location"];
+        locationShow.innerText = arr[key].location;
         showsParent.appendChild(locationShow);
        
         const buyTickets = document.createElement("button");
@@ -124,5 +95,3 @@ const arrDates = [
         showsParent.appendChild(buyTickets);
     }
 }
-
-//displayShows(arrDates);

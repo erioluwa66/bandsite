@@ -4,7 +4,7 @@
 @use "./global" as *;
 
 //Form Comment Styling
-.conv {
+.conversation {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -89,8 +89,8 @@
     &__btn {
         width: 100%;
         height: 4.6rem;
-        background-color: #323232;
-        color: #FFF;
+        background-color: $primary-text;
+        color:$primary-text-light;
         font-size: 1rem;
         letter-spacing: 0.1rem;
         border-radius: 5px;
@@ -197,12 +197,12 @@
         justify-content: space-between;
     }
 
-    &__avatar-cont {
+    &__pics-cont {
         justify-content: flex-end;
         border-radius: 1.3rem;
         width: 2.75rem;
         height: 2.75rem;
-        background-color: $primary-text-light;
+        background-color: $secondary-text;
         margin-right: 1.18rem;
     }
 
@@ -228,11 +228,11 @@
         }
     }
 
-    &__comment-cont--fnode {
+    &__comment-cont--first {
         border-top: 1px solid $divider-line;
     }
 
-    &__comment-cont--lnode {
+    &__comment-cont--last {
         border-bottom: 1px solid $divider-line;
     }
 
